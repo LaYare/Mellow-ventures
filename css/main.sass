@@ -1,0 +1,132 @@
+$blanco: #ffffff
+$morado: rgb(149, 34, 228)
+
+body
+  background-image: url(../images/textura.jpg)
+  background-size: cover
+
+#home
+  .row
+    padding-left: 0px !important
+    padding-right: 0px !important
+
+  h1
+    letter-spacing: 15px
+    margin-top: 15%
+    font-size: 50px
+    color: $blanco
+
+  small
+    color: $blanco
+    letter-spacing: 4px
+
+  .reporte
+    margin-top: 12%
+
+    small
+      letter-spacing: 2px
+      display: block
+      margin-bottom: 1%
+
+    a
+      padding: 0.5em 1em
+      cursor: pointer
+      border: 1px solid $blanco
+      color: $blanco
+      background-color: $morado
+
+  .col-xs-offset-11
+    img
+      width: 4em
+      height: 4em
+
+#portafolio
+  .container
+    .col-xs-2
+      border-right: 1px solid $blanco
+      height: 35em
+      text-align: right
+      margin-top: 8%
+
+      div
+        width: 9px
+        height: 9px
+        border-radius: 100%
+        background-color: $morado
+        border: 1px solid $blanco
+        position: absolute
+        margin-left: 90%
+
+      .puntoMes
+        width: 13px
+        height: 13px
+        border-radius: 100%
+        background-color: $morado
+        border: 1px solid $blanco
+        position: absolute
+        margin-left: 89%
+        margin-top: 8%
+
+      .mes
+        margin-top: 8%
+
+      h4
+        color: $blanco
+        font-weight: 900
+        text-align: right
+        margin-top: -10px
+        letter-spacing: 2px
+
+      h2
+        color: $blanco
+        text-align: right
+        margin-top: 265%
+        margin-bottom: 0px
+        font-size: 1.5em
+        transition: 1s
+
+      h3
+        color: $blanco
+        text-align: right
+        margin-top: 279%
+        margin-bottom: 0px
+        font-size: 1.5em
+        transition: 1s
+
+      small
+        color: $blanco
+        float: right
+        font-size: 11px
+        font-weight: 500
+
+      .hid
+        visibility: hidden
+
+      &:hover .hid
+        visibility: visible
+
+      &:hover
+        min-height: 50em
+        margin-top: 0%
+        transition: 1s
+        background-color: rgba(255, 255, 255, 0.3)
+
+      &:hover .descripcion, &:hover .url
+        margin-top: 10%
+
+      &:hover img
+        margin-top: 25%
+        display: block
+        margin-right: -16%
+        height: 18em
+
+      &:hover h2
+        margin-top: 20px
+        transition: 1s
+
+      &:hover h3
+        margin-top: 55px
+        transition: 1s
+
+      &:hover .hidden-lg, &:hover .hidden-md, &:hover .hidden-sm, &:hover .hidden-xs
+        display: initial !important
