@@ -29,78 +29,90 @@ body {
   width: 4em;
   height: 4em; }
 
-#portafolio .container .col-xs-2 {
+#portafolio .container-fluid .col-xs-2 {
   border-right: 1px solid #ffffff;
-  height: 35em;
+  height: 38em;
   text-align: right;
   margin-top: 8%; }
-  #portafolio .container .col-xs-2 div {
+  #portafolio .container-fluid .col-xs-2 div {
     width: 9px;
     height: 9px;
     border-radius: 100%;
     background-color: #9522e4;
     border: 1px solid #ffffff;
     position: absolute;
-    margin-left: 90%; }
-  #portafolio .container .col-xs-2 .puntoMes {
-    width: 13px;
-    height: 13px;
+    margin-left: 92%; }
+  #portafolio .container-fluid .col-xs-2 .puntoMes {
+    width: 14px;
+    height: 14px;
     border-radius: 100%;
     background-color: #9522e4;
     border: 1px solid #ffffff;
     position: absolute;
-    margin-left: 89%;
+    margin-left: 91%; }
+  #portafolio .container-fluid .col-xs-2 .mes {
     margin-top: 8%; }
-  #portafolio .container .col-xs-2 .mes {
-    margin-top: 8%; }
-  #portafolio .container .col-xs-2 h4 {
+  #portafolio .container-fluid .col-xs-2 h4 {
     color: #ffffff;
     font-weight: 900;
     text-align: right;
     margin-top: -10px;
     letter-spacing: 2px; }
-  #portafolio .container .col-xs-2 h2 {
+  #portafolio .container-fluid .col-xs-2 h2 {
     color: #ffffff;
     text-align: right;
-    margin-top: 265%;
+    margin-top: 225%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
-  #portafolio .container .col-xs-2 h3 {
+  #portafolio .container-fluid .col-xs-2 h3 {
     color: #ffffff;
     text-align: right;
-    margin-top: 279%;
+    margin-top: 239%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
-  #portafolio .container .col-xs-2 small {
+  #portafolio .container-fluid .col-xs-2 small, #portafolio .container-fluid .col-xs-2 p {
     color: #ffffff;
     float: right;
     font-size: 11px;
     font-weight: 500; }
-  #portafolio .container .col-xs-2 .hid {
+  #portafolio .container-fluid .col-xs-2 a {
+    padding: 1.5em 2em;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #9522e4;
+    display: block; }
+  #portafolio .container-fluid .col-xs-2 .hid {
     visibility: hidden; }
-  #portafolio .container .col-xs-2:hover .hid {
+  #portafolio .container-fluid .col-xs-2:hover .puntoMes {
+    margin-top: 7%; }
+  #portafolio .container-fluid .col-xs-2:hover div {
+    margin-top: 41%; }
+  #portafolio .container-fluid .col-xs-2:hover h4 {
+    margin-top: 45%; }
+  #portafolio .container-fluid .col-xs-2:hover .hid {
     visibility: visible; }
-  #portafolio .container .col-xs-2:hover {
-    min-height: 50em;
-    margin-top: 0%;
+  #portafolio .container-fluid .col-xs-2:hover p {
+    margin-top: 8%;
+    margin-right: -8%; }
+  #portafolio .container-fluid .col-xs-2:hover {
+    min-height: 59.5em;
+    margin-top: -6.5%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
-  #portafolio .container .col-xs-2:hover .descripcion, #portafolio .container .col-xs-2:hover .url {
+  #portafolio .container-fluid .col-xs-2:hover .descripcion, #portafolio .container-fluid .col-xs-2:hover .url {
     margin-top: 10%; }
-  #portafolio .container .col-xs-2:hover img {
+  #portafolio .container-fluid .col-xs-2:hover img {
     margin-top: 25%;
     display: block;
-    margin-right: -16%;
-    height: 18em; }
-  #portafolio .container .col-xs-2:hover h2 {
-    margin-top: 20px;
+    margin-right: -8%;
+    height: 19em; }
+  #portafolio .container-fluid .col-xs-2:hover h2, #portafolio .container-fluid .col-xs-2:hover h3 {
+    margin-top: 26%;
     transition: 1s; }
-  #portafolio .container .col-xs-2:hover h3 {
-    margin-top: 55px;
-    transition: 1s; }
-  #portafolio .container .col-xs-2:hover .hidden-lg, #portafolio .container .col-xs-2:hover .hidden-md, #portafolio .container .col-xs-2:hover .hidden-sm, #portafolio .container .col-xs-2:hover .hidden-xs {
+  #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #portafolio .container-fluid .col-xs-2:hover .hidden-md, #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
     display: initial !important; }
 
 /*# sourceMappingURL=main.css.map */

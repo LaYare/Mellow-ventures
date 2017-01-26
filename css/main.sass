@@ -41,10 +41,10 @@ body
       height: 4em
 
 #portafolio
-  .container
+  .container-fluid
     .col-xs-2
       border-right: 1px solid $blanco
-      height: 35em
+      height: 38em
       text-align: right
       margin-top: 8%
 
@@ -55,17 +55,16 @@ body
         background-color: $morado
         border: 1px solid $blanco
         position: absolute
-        margin-left: 90%
+        margin-left: 92%
 
       .puntoMes
-        width: 13px
-        height: 13px
+        width: 14px
+        height: 14px
         border-radius: 100%
         background-color: $morado
         border: 1px solid $blanco
         position: absolute
-        margin-left: 89%
-        margin-top: 8%
+        margin-left: 91%
 
       .mes
         margin-top: 8%
@@ -80,7 +79,7 @@ body
       h2
         color: $blanco
         text-align: right
-        margin-top: 265%
+        margin-top: 225%
         margin-bottom: 0px
         font-size: 1.5em
         transition: 1s
@@ -88,26 +87,47 @@ body
       h3
         color: $blanco
         text-align: right
-        margin-top: 279%
+        margin-top: 239%
         margin-bottom: 0px
         font-size: 1.5em
         transition: 1s
 
-      small
+      small, p
         color: $blanco
         float: right
         font-size: 11px
         font-weight: 500
 
+      a
+        padding: 1.5em 2em
+        cursor: pointer
+        border: 1px solid $blanco
+        color: $blanco
+        background-color: $morado
+        display: block
+
       .hid
         visibility: hidden
+
+      &:hover .puntoMes
+        margin-top: 7%
+
+      &:hover div
+        margin-top: 41%
+
+      &:hover h4
+        margin-top: 45%
 
       &:hover .hid
         visibility: visible
 
+      &:hover p
+        margin-top: 8%
+        margin-right: -8%
+
       &:hover
-        min-height: 50em
-        margin-top: 0%
+        min-height: 59.5em
+        margin-top: -6.5%
         transition: 1s
         background-color: rgba(255, 255, 255, 0.3)
 
@@ -117,15 +137,11 @@ body
       &:hover img
         margin-top: 25%
         display: block
-        margin-right: -16%
-        height: 18em
+        margin-right: -8%
+        height: 19em
 
-      &:hover h2
-        margin-top: 20px
-        transition: 1s
-
-      &:hover h3
-        margin-top: 55px
+      &:hover h2, &:hover h3
+        margin-top: 26%
         transition: 1s
 
       &:hover .hidden-lg, &:hover .hidden-md, &:hover .hidden-sm, &:hover .hidden-xs
