@@ -31,9 +31,9 @@ body {
 
 #portafolio .container-fluid .col-xs-2 {
   border-right: 1px solid #ffffff;
-  height: 38em;
+  min-height: 38em;
   text-align: right;
-  margin-top: 8%; }
+  margin-top: 1%; }
   #portafolio .container-fluid .col-xs-2 div {
     width: 9px;
     height: 9px;
@@ -61,14 +61,14 @@ body {
   #portafolio .container-fluid .col-xs-2 h2 {
     color: #ffffff;
     text-align: right;
-    margin-top: 225%;
+    margin-top: 235%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
   #portafolio .container-fluid .col-xs-2 h3 {
     color: #ffffff;
     text-align: right;
-    margin-top: 239%;
+    margin-top: 249%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
@@ -89,23 +89,23 @@ body {
   #portafolio .container-fluid .col-xs-2:hover .puntoMes {
     margin-top: 7%; }
   #portafolio .container-fluid .col-xs-2:hover div {
-    margin-top: 41%; }
+    margin-top: 21%; }
   #portafolio .container-fluid .col-xs-2:hover h4 {
-    margin-top: 45%; }
+    margin-top: 21%; }
   #portafolio .container-fluid .col-xs-2:hover .hid {
     visibility: visible; }
   #portafolio .container-fluid .col-xs-2:hover p {
     margin-top: 8%;
     margin-right: -8%; }
   #portafolio .container-fluid .col-xs-2:hover {
-    min-height: 59.5em;
+    min-height: 59em;
     margin-top: -6.5%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
   #portafolio .container-fluid .col-xs-2:hover .descripcion, #portafolio .container-fluid .col-xs-2:hover .url {
-    margin-top: 10%; }
+    margin-top: 7.5%; }
   #portafolio .container-fluid .col-xs-2:hover img {
-    margin-top: 25%;
+    margin-top: 17.5%;
     display: block;
     margin-right: -8%;
     height: 19em; }
@@ -114,5 +114,37 @@ body {
     transition: 1s; }
   #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #portafolio .container-fluid .col-xs-2:hover .hidden-md, #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
     display: initial !important; }
+
+#equipo .container-fluid .col-xs-2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 59em;
+  margin-top: -6.5%;
+  margin-right: 1%;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+  #equipo .container-fluid .col-xs-2 div {
+    width: 12em;
+    font-size: 3em;
+    position: absolute;
+    margin-top: 130%;
+    transform: rotate(-90deg);
+    font-weight: 900;
+    color: #ffffff;
+    margin-left: -60%;
+    letter-spacing: 3px; }
+  #equipo .container-fluid .col-xs-2 img {
+    margin-top: 50%; }
+  #equipo .container-fluid .col-xs-2 h4 {
+    margin-top: 7%;
+    color: #ffffff;
+    font-weight: 500; }
+  #equipo .container-fluid .col-xs-2 p {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400; }
+  #equipo .container-fluid .col-xs-2 a img {
+    margin-top: 3%;
+    width: 3em;
+    height: 3em; }
 
 /*# sourceMappingURL=main.css.map */
