@@ -114,7 +114,7 @@ html.fp-enabled,
     right: 17px;
 }
 #fp-nav.left {
-    left: 17px;
+    left: 57px;
 }
 .fp-slidesNav{
     position: absolute;
@@ -141,7 +141,7 @@ html.fp-enabled,
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 57px 57px 57px 20px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -173,8 +173,8 @@ html.fp-enabled,
     z-index: 1;
     height: 4px;
     width: 4px;
-    border: 0;
-    background: #333;
+    border: 2px solid #ffffff;
+    background: rgb(149, 34, 228);
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;

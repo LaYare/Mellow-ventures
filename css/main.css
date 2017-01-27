@@ -147,4 +147,47 @@ body {
     width: 3em;
     height: 3em; }
 
+#contacto .contactanos {
+  height: 25em;
+  width: 70%;
+  background-color: rgba(0, 0, 9, 0.3);
+  padding-top: 12%;
+  color: #ffffff;
+  margin-top: 5%; }
+  #contacto .contactanos h1 {
+    font-size: 3.5em;
+    letter-spacing: 20px; }
+  #contacto .contactanos p {
+    letter-spacing: 2px; }
+#contacto .form {
+  width: 70%;
+  height: 3em;
+  border: 1px solid #ffffff; }
+  #contacto .form .datos {
+    background-color: #ffffff;
+    color: #9522e4;
+    padding: 1.3%; }
+  #contacto .form .correo {
+    background-color: #9522e4;
+    padding: 0.75%; }
+    #contacto .form .correo img {
+      width: 20px;
+      margin: 1% 3%; }
+    #contacto .form .correo .text {
+      width: 78%;
+      border: none;
+      background: transparent; }
+    #contacto .form .correo input {
+      color: #ffffff; }
+    #contacto .form .correo input::-webkit-input-placeholder {
+      color: #ffffff; }
+    #contacto .form .correo input:-moz-placeholder {
+      color: #ffffff; }
+    #contacto .form .correo input:-ms-input-placeholder {
+      color: #ffffff; }
+    #contacto .form .correo .send {
+      border: none;
+      background: transparent;
+      color: #ffffff; }
+
 /*# sourceMappingURL=main.css.map */
