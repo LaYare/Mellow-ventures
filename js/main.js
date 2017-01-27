@@ -6,7 +6,7 @@ $(document).ready(function() {
         anchors:['home1', 'portafolio1', 'equipo1', 'contacto1'],
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['NOSOTROS', 'PORTAFOLIO', 'EQUIPO', 'CONTACTO'],
+        navigationTooltips: ['', '', '', ''],
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
