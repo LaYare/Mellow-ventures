@@ -2,9 +2,13 @@ $blanco: #ffffff
 $morado: rgb(149, 34, 228)
 
 body
-  background-image: url(../images/textura.jpg)
+  background-image: url(../images/moun.jpg)
   background-size: cover
   color: $blanco
+  background: -webkit-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
+  background: -o-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
+  background: -moz-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
+  background: linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
 
 #fullpage
   ul
@@ -23,6 +27,9 @@ body
   #home
     ul
       margin-top: -31%
+
+    .mellow
+      margin-left: -20%
 
     .row
       padding-left: 0px !important
@@ -119,6 +126,7 @@ body
           border: 1px solid $blanco
           background-color: $morado
           display: block
+          color: $blanco
 
         .hid
           visibility: hidden
