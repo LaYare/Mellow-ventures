@@ -6,6 +6,43 @@ body {
   background: -o-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8));
   background: -moz-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8));
   background: linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8)); }
+  body .animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  body .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  body .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-13px);
+    transform: translateY(-13px); }
+  60% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-13px);
+    -ms-transform: translateY(-13px);
+    transform: translateY(-13px); }
+  60% {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+  body .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce; }
 
 #fullpage ul {
   list-style: none;
@@ -37,17 +74,33 @@ body {
     letter-spacing: 2px;
     display: block;
     margin-bottom: 1%; }
-  #fullpage #home .reporte a {
-    padding: 0.5em 1em;
+  #fullpage #home .reporte .descarga {
+    height: 2.5em;
+    width: 2.5em;
+    display: inline-block;
+    padding: 1em 1.7em 1em 1em;
     cursor: pointer;
     border: 1px solid #ffffff;
     background-color: #9522e4;
     color: #ffffff; }
+    #fullpage #home .reporte .descarga img {
+      height: 0.8em;
+      width: 0.8em; }
+  #fullpage #home .reporte .w {
+    position: absolute;
+    height: 40em !important;
+    width: 40em !important;
+    margin-top: -33.6%;
+    margin-left: 10em; }
 #fullpage #home .col-xs-offset-11 img {
   width: 4em;
-  height: 4em; }
+  height: 4em;
+  position: relative;
+  z-index: 1; }
 #fullpage #portafolio ul {
-  margin-top: -28%; }
+  margin-top: -25%;
+  position: absolute;
+  z-index: 5; }
 #fullpage #portafolio .container-fluid .col-xs-2 {
   border-right: 1px solid #ffffff;
   min-height: 38em;
@@ -102,43 +155,45 @@ body {
   #fullpage #portafolio .container-fluid .col-xs-2 .hid {
     visibility: hidden; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .puntoMes {
-    margin-top: 7%; }
+    margin-top: 6%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover div {
-    margin-top: 21%; }
+    margin-top: 20%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover h4 {
-    margin-top: 21%; }
+    margin-top: 20%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .hid {
     visibility: visible; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover p {
-    margin-top: 8%;
+    margin-top: 7%;
     margin-right: -8%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover {
     min-height: 59em;
-    margin-top: -6.5%;
+    margin-top: -5.5%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .descripcion, #fullpage #portafolio .container-fluid .col-xs-2:hover .url {
-    margin-top: 7.5%; }
+    margin-top: 6.5%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover img {
-    margin-top: 17.5%;
+    margin-top: 16.5%;
     display: block;
     margin-right: -8%;
     height: 19em; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover h2, #fullpage #portafolio .container-fluid .col-xs-2:hover h3 {
-    margin-top: 26%;
+    margin-top: 25%;
     transition: 1s; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-md, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
     display: initial !important; }
 #fullpage #equipo ul {
-  margin-top: -42%; }
+  margin-top: -37%; }
 #fullpage #equipo .container-fluid .col-xs-2 {
   background-color: rgba(255, 255, 255, 0.3);
-  height: 59em;
-  margin-top: -6.5%;
+  height: 54em;
+  margin-top: -3.2%;
   margin-right: 1%;
   padding-left: 0px !important;
-  padding-right: 0px !important; }
-  #fullpage #equipo .container-fluid .col-xs-2 div {
+  padding-right: 0px !important;
+  overflow: hidden; }
+  #fullpage #equipo .container-fluid .col-xs-2 span {
+    display: block;
     width: 12em;
     font-size: 3em;
     position: absolute;
@@ -147,10 +202,19 @@ body {
     font-weight: 900;
     margin-left: -60%;
     letter-spacing: 3px; }
-  #fullpage #equipo .container-fluid .col-xs-2 img {
+  #fullpage #equipo .container-fluid .col-xs-2 .conte-persona {
+    height: 23em;
+    overflow: hidden;
     margin-top: 50%; }
+    #fullpage #equipo .container-fluid .col-xs-2 .conte-persona img {
+      margin-top: 0%;
+      -webkit-transform: scale(1.1);
+      transition: 0.3s; }
+      #fullpage #equipo .container-fluid .col-xs-2 .conte-persona img:hover {
+        -webkit-transform: scale(1);
+        transition: 0.3s; }
   #fullpage #equipo .container-fluid .col-xs-2 h4 {
-    margin-top: 7%;
+    margin-top: 11%;
     font-weight: 500; }
   #fullpage #equipo .container-fluid .col-xs-2 p {
     font-size: 11px;

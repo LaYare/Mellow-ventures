@@ -10,6 +10,53 @@ body
   background: -moz-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
   background: linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8))
 
+  .animated
+    -webkit-animation-duration: 4s
+    animation-duration: 4s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+
+  .animated.infinite
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+
+  .animated.hinge
+    -webkit-animation-duration: 2s
+    animation-duration: 2s
+
+  @-webkit-keyframes bounce
+    0%, 20%, 50%, 80%, 100%
+      -webkit-transform: translateY(0)
+      transform: translateY(0)
+
+    40%
+      -webkit-transform: translateY(-13px)
+      transform: translateY(-13px)
+
+    60%
+      -webkit-transform: translateY(-8px)
+      transform: translateY(-8px)
+
+  @keyframes bounce
+    0%, 20%, 50%, 80%, 100%
+      -webkit-transform: translateY(0)
+      -ms-transform: translateY(0)
+      transform: translateY(0)
+
+    40%
+      -webkit-transform: translateY(-13px)
+      -ms-transform: translateY(-13px)
+      transform: translateY(-13px)
+
+    60%
+      -webkit-transform: translateY(-8px)
+      -ms-transform: translateY(-8px)
+      transform: translateY(-8px)
+
+  .bounce
+    -webkit-animation-name: bounce
+    animation-name: bounce
+
 #fullpage
   ul
     list-style: none
@@ -51,21 +98,39 @@ body
         display: block
         margin-bottom: 1%
 
-      a
-        padding: 0.5em 1em
+      .descarga
+        height: 2.5em
+        width: 2.5em
+        display: inline-block
+        padding: 1em 1.7em 1em 1em
         cursor: pointer
         border: 1px solid $blanco
         background-color: $morado
         color: $blanco
 
+        img
+          height: 0.8em
+          width: 0.8em
+
+      .w
+        position: absolute
+        height: 40em !important
+        width: 40em !important
+        margin-top: -33.6%
+        margin-left: 10em
+
     .col-xs-offset-11
       img
         width: 4em
         height: 4em
+        position: relative
+        z-index: 1
 
   #portafolio
     ul
-      margin-top: -28%
+      margin-top: -25%
+      position: absolute
+      z-index: 5
 
     .container-fluid
       .col-xs-2
@@ -132,38 +197,38 @@ body
           visibility: hidden
 
         &:hover .puntoMes
-          margin-top: 7%
+          margin-top: 6%
 
         &:hover div
-          margin-top: 21%
+          margin-top: 20%
 
         &:hover h4
-          margin-top: 21%
+          margin-top: 20%
 
         &:hover .hid
           visibility: visible
 
         &:hover p
-          margin-top: 8%
+          margin-top: 7%
           margin-right: -8%
 
         &:hover
           min-height: 59em
-          margin-top: -6.5%
+          margin-top: -5.5%
           transition: 1s
           background-color: rgba(255, 255, 255, 0.3)
 
         &:hover .descripcion, &:hover .url
-          margin-top: 7.5%
+          margin-top: 6.5%
 
         &:hover img
-          margin-top: 17.5%
+          margin-top: 16.5%
           display: block
           margin-right: -8%
           height: 19em
 
         &:hover h2, &:hover h3
-          margin-top: 26%
+          margin-top: 25%
           transition: 1s
 
         &:hover .hidden-lg, &:hover .hidden-md, &:hover .hidden-sm, &:hover .hidden-xs
@@ -171,18 +236,20 @@ body
 
   #equipo
     ul
-      margin-top: -42%
+      margin-top: -37%
 
     .container-fluid
       .col-xs-2
         background-color: rgba(255, 255, 255, 0.3)
-        height: 59em
-        margin-top: -6.5%
+        height: 54em
+        margin-top: -3.2%
         margin-right: 1%
         padding-left: 0px !important
         padding-right: 0px !important
+        overflow: hidden
 
-        div
+        span
+          display: block
           width: 12em
           font-size: 3em
           position: absolute
@@ -192,11 +259,22 @@ body
           margin-left: -60%
           letter-spacing: 3px
 
-        img
+        .conte-persona
+          height: 23em
+          overflow: hidden
           margin-top: 50%
 
+          img
+            margin-top: 0%
+            -webkit-transform: scale(1.1)
+            transition: 0.3s
+
+            &:hover
+              -webkit-transform: scale(1)
+              transition: 0.3s
+
         h4
-          margin-top: 7%
+          margin-top: 11%
           font-weight: 500
 
         p
