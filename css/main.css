@@ -44,66 +44,48 @@ body {
     -webkit-animation-name: bounce;
     animation-name: bounce; }
 
-#fullpage ul {
-  list-style: none;
-  margin-top: -32%;
-  margin-left: -19%;
-  position: absolute;
-  transform: rotate(-90deg);
-  font-size: 11px;
-  min-width: 58em; }
-#fullpage li {
-  display: inline-block;
-  margin-left: 5%; }
-#fullpage #home .mgt {
-  margin-top: 5vh; }
-#fullpage #home ul {
-  margin-top: -31%; }
-#fullpage #home .mellow {
-  margin-left: -20%;
-  margin-top: 5vh; }
-#fullpage #home .row {
-  padding-left: 0px !important;
-  padding-right: 0px !important; }
-#fullpage #home h1 {
-  letter-spacing: 15px;
-  margin-top: 15%;
-  font-size: 50px; }
-#fullpage #home small {
-  letter-spacing: 4px; }
-#fullpage #home .reporte {
-  margin-top: 11%; }
-  #fullpage #home .reporte small {
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 1%; }
-  #fullpage #home .reporte .descarga {
-    height: 2.5em;
-    width: 2.5em;
-    display: inline-block;
-    padding: 1em 1.7em 1em 1em;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-    background-color: #9522e4;
-    color: #ffffff; }
-    #fullpage #home .reporte .descarga img {
-      height: 0.8em;
-      width: 0.8em; }
-  #fullpage #home .reporte .w {
-    position: absolute;
-    height: 40em !important;
-    width: 40em !important;
-    margin-top: -67.3vh;
-    margin-left: 10em; }
-#fullpage #home .col-xs-offset-11 img {
-  width: 4em;
-  height: 4em;
-  position: relative;
-  z-index: 1; }
-#fullpage #portafolio ul {
-  margin-top: -25%;
-  position: absolute;
-  z-index: 5; }
+#fullpage #home {
+  background-image: url(../images/w.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40%; }
+  #fullpage #home .mgt {
+    margin-top: 5vh; }
+  #fullpage #home .mellow {
+    margin-left: -20%;
+    margin-top: 5vh; }
+  #fullpage #home .row {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  #fullpage #home h1 {
+    letter-spacing: 15px;
+    margin-top: 15%;
+    font-size: 50px; }
+  #fullpage #home small {
+    letter-spacing: 4px; }
+  #fullpage #home .reporte {
+    margin-top: 11%; }
+    #fullpage #home .reporte small {
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 1%; }
+    #fullpage #home .reporte .descarga {
+      height: 2.5em;
+      width: 2.5em;
+      display: inline-block;
+      padding: 1em 1.7em 1em 1em;
+      cursor: pointer;
+      border: 1px solid #ffffff;
+      background-color: #9522e4;
+      color: #ffffff; }
+      #fullpage #home .reporte .descarga img {
+        height: 0.8em;
+        width: 0.8em; }
+  #fullpage #home .col-xs-offset-11 img {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    z-index: 1; }
 #fullpage #portafolio .container-fluid .col-xs-2 {
   border-right: 1px solid #ffffff;
   min-height: 38em;
@@ -185,8 +167,6 @@ body {
     transition: 1s; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-md, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
     display: initial !important; }
-#fullpage #equipo ul {
-  margin-top: -37%; }
 #fullpage #equipo .container-fluid .col-xs-2 {
   background-color: rgba(255, 255, 255, 0.3);
   min-height: 100vh;
@@ -231,14 +211,24 @@ body {
 #fullpage #contacto .contactanos {
   height: 25em;
   width: 70%;
-  background-color: rgba(0, 0, 9, 0.3);
-  padding-top: 12%;
-  margin-top: 20vh; }
-  #fullpage #contacto .contactanos h1 {
-    font-size: 3.5em;
-    letter-spacing: 20px; }
-  #fullpage #contacto .contactanos p {
-    letter-spacing: 2px; }
+  background-image: url(../images/mapa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: opacity(30%);
+  margin-top: 20vh;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+  #fullpage #contacto .contactanos .mapa {
+    background-color: rgba(0, 0, 9, 0.5);
+    height: 25em;
+    width: 100%;
+    padding-top: 12%; }
+    #fullpage #contacto .contactanos .mapa h1 {
+      font-size: 3.5em;
+      letter-spacing: 20px; }
+    #fullpage #contacto .contactanos .mapa p {
+      letter-spacing: 2px; }
 #fullpage #contacto .form {
   width: 70%;
   height: 3em;
