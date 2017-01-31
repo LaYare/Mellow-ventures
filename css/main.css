@@ -55,10 +55,13 @@ body {
 #fullpage li {
   display: inline-block;
   margin-left: 5%; }
+#fullpage #home .mgt {
+  margin-top: 5vh; }
 #fullpage #home ul {
   margin-top: -31%; }
 #fullpage #home .mellow {
-  margin-left: -20%; }
+  margin-left: -20%;
+  margin-top: 5vh; }
 #fullpage #home .row {
   padding-left: 0px !important;
   padding-right: 0px !important; }
@@ -69,7 +72,7 @@ body {
 #fullpage #home small {
   letter-spacing: 4px; }
 #fullpage #home .reporte {
-  margin-top: 12%; }
+  margin-top: 11%; }
   #fullpage #home .reporte small {
     letter-spacing: 2px;
     display: block;
@@ -90,7 +93,7 @@ body {
     position: absolute;
     height: 40em !important;
     width: 40em !important;
-    margin-top: -33.6%;
+    margin-top: -67.3vh;
     margin-left: 10em; }
 #fullpage #home .col-xs-offset-11 img {
   width: 4em;
@@ -105,7 +108,7 @@ body {
   border-right: 1px solid #ffffff;
   min-height: 38em;
   text-align: right;
-  margin-top: 1%; }
+  margin-top: 15vh; }
   #fullpage #portafolio .container-fluid .col-xs-2 div {
     width: 9px;
     height: 9px;
@@ -166,8 +169,8 @@ body {
     margin-top: 7%;
     margin-right: -8%; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover {
-    min-height: 59em;
-    margin-top: -5.5%;
+    min-height: 100vh;
+    margin-top: 0%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .descripcion, #fullpage #portafolio .container-fluid .col-xs-2:hover .url {
@@ -186,8 +189,8 @@ body {
   margin-top: -37%; }
 #fullpage #equipo .container-fluid .col-xs-2 {
   background-color: rgba(255, 255, 255, 0.3);
-  height: 54em;
-  margin-top: -3.2%;
+  min-height: 100vh;
+  margin-top: 0%;
   margin-right: 1%;
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -197,7 +200,7 @@ body {
     width: 12em;
     font-size: 3em;
     position: absolute;
-    margin-top: 130%;
+    margin-top: 48vh;
     transform: rotate(-90deg);
     font-weight: 900;
     margin-left: -60%;
@@ -205,7 +208,7 @@ body {
   #fullpage #equipo .container-fluid .col-xs-2 .conte-persona {
     height: 23em;
     overflow: hidden;
-    margin-top: 50%; }
+    margin-top: 20vh; }
     #fullpage #equipo .container-fluid .col-xs-2 .conte-persona img {
       margin-top: 0%;
       -webkit-transform: scale(1.1);
@@ -223,12 +226,14 @@ body {
     margin-top: 3%;
     width: 3em;
     height: 3em; }
+#fullpage #contacto .mellow-dow {
+  margin-top: 50%; }
 #fullpage #contacto .contactanos {
   height: 25em;
   width: 70%;
   background-color: rgba(0, 0, 9, 0.3);
   padding-top: 12%;
-  margin-top: 5%; }
+  margin-top: 20vh; }
   #fullpage #contacto .contactanos h1 {
     font-size: 3.5em;
     letter-spacing: 20px; }
