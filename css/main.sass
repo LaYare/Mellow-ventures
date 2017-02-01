@@ -66,10 +66,13 @@ body
 
     .mgt
       margin-top: 5vh
+      margin-left: 3vw
+      height: 8vh
 
     .mellow
       margin-left: -20%
-      margin-top: 5vh
+      margin-top: 10vh
+      height: 12vh
 
     .row
       padding-left: 0px !important
@@ -77,7 +80,7 @@ body
 
     h1
       letter-spacing: 15px
-      margin-top: 15%
+      margin-top: 25vh
       font-size: 50px
 
     small
@@ -92,24 +95,29 @@ body
         margin-bottom: 1%
 
       .descarga
-        height: 2.5em
-        width: 2.5em
+        height: 7vh
+        width: 7vh
         display: inline-block
-        padding: 1em 1.7em 1em 1em
+        padding: 1%
         cursor: pointer
-        border: 1px solid $blanco
+        border: 2px solid $blanco
         background-color: $morado
         color: $blanco
 
         img
+          margin-top: 30%
           height: 0.8em
           width: 0.8em
 
     .col-xs-offset-11
-      img
+      .sello
+        background-image: url(../images/Sellos-02.png)
+        background-size: 3.8em
+        background-repeat: no-repeat
         width: 4em
         height: 4em
         position: relative
+        margin-top: -2vh
         z-index: 1
 
   #portafolio
@@ -126,8 +134,9 @@ body
           border-radius: 100%
           background-color: $morado
           border: 1px solid $blanco
-          position: absolute
-          margin-left: 92%
+          position: relative
+          float: right !important
+          margin-right: -20px
 
         .puntoMes
           width: 14px
@@ -135,8 +144,9 @@ body
           border-radius: 100%
           background-color: $morado
           border: 1px solid $blanco
-          position: absolute
-          margin-left: 91%
+          position: relative
+          float: right !important
+          margin-right: -22px
 
         .mes
           margin-top: 8%
@@ -149,7 +159,7 @@ body
 
         h2
           text-align: right
-          margin-top: 235%
+          margin-top: 238%
           margin-bottom: 0px
           font-size: 1.5em
           transition: 1s
@@ -161,18 +171,28 @@ body
           font-size: 1.5em
           transition: 1s
 
-        small, p
+        small
           float: right
           font-size: 11px
           font-weight: 500
 
-        a
-          padding: 1.5em 2em
+        span
+          font-size: 11px
+          font-weight: 500
+
+        a .descarga
+          height: 7vh
+          width: 7vh
           cursor: pointer
-          border: 1px solid $blanco
+          border: 2px solid $blanco
+          border-radius: 0px !important
           background-color: $morado
-          display: block
+          display: inline-block
           color: $blanco
+
+          img
+            height: 0.8em
+            width: 0.8em
 
         .hid
           visibility: hidden
@@ -198,6 +218,18 @@ body
           margin-top: 0%
           transition: 1s
           background-color: rgba(255, 255, 255, 0.3)
+
+        &:hover span
+          margin-right: 25px !important
+
+        &:hover .descarga
+          margin-top: 0%
+          padding: 5%
+          margin-right: -16px
+
+        &:hover .descarga img
+          height: 0.8em
+          width: 0.8em
 
         &:hover .descripcion, &:hover .url
           margin-top: 6.5%
@@ -271,27 +303,28 @@ body
     .contactanos
       height: 25em
       width: 70%
-      background-image: url(../images/mapa.jpg)
+      background-image: url(../images/mapa.png)
       background-position: center
       background-size: cover
       background-repeat: no-repeat
-      filter: opacity(30%)
       margin-top: 20vh
       padding-left: 0px !important
       padding-right: 0px !important
 
-      .mapa
-        background-color: rgba(0, 0, 9, 0.5)
-        height: 25em
-        width: 100%
-        padding-top: 12%
+      h1
+        font-size: 3.5em
+        letter-spacing: 20px
+        position: absolute
+        left: 50%
+        top: 40%
+        transform: translate(-50%, -50%)
+        -webkit-transform: translate(-50%, -50%)
 
-        h1
-          font-size: 3.5em
-          letter-spacing: 20px
-
-        p
-          letter-spacing: 2px
+      p
+        letter-spacing: 2px
+        position: absolute
+        left: 15.5%
+        top: 60%
 
     .form
       width: 70%
@@ -305,7 +338,7 @@ body
 
       .correo
         background-color: $morado
-        padding: 0.75%
+        padding: 0.86%
 
         img
           width: 20px
@@ -331,4 +364,6 @@ body
         .send
           border: none
           background: transparent
-          color: $blanco
+
+          img
+            width: 15px

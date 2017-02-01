@@ -69,3 +69,11 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
+
+  function ocultar() {
+    if ((document.documentElement.scrollTop || self.pageYOffset) != 0) {
+      alert('Vas bien');
+    }else {
+      alert('Probando, probando');
+    }
+  }
