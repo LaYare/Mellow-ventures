@@ -142,10 +142,10 @@ body {
     transition: 1s; }
   #fullpage #portafolio .container-fluid .col-xs-2 small {
     float: right;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500; }
   #fullpage #portafolio .container-fluid .col-xs-2 span {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500; }
   #fullpage #portafolio .container-fluid .col-xs-2 a .descarga {
     height: 7vh;
