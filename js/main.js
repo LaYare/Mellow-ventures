@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         //Desplazamiento
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 1000,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
@@ -69,11 +69,3 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
-
-  function ocultar() {
-    if ((document.documentElement.scrollTop || self.pageYOffset) != 0) {
-      alert('Vas bien');
-    }else {
-      alert('Probando, probando');
-    }
-  }

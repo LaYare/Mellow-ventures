@@ -1,11 +1,15 @@
 body {
-  background-image: url(../images/moun.jpg);
+  background: url(../images/animate.png), url(../images/colors.png);
   background-size: cover;
   color: #ffffff;
-  background: -webkit-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8));
-  background: -o-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8));
-  background: -moz-linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8));
-  background: linear-gradient(-90deg, rgba(46, 22, 84, 0.8), rgba(255, 0, 0, 0.8)); }
+  animation: animatedBackground 50s linear infinite; }
+@-webkit-keyframes animatedBackground {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 50% 0; }
+  100% {
+    background-position: 0 0; } }
   body .animated {
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -158,40 +162,49 @@ body {
   #fullpage #portafolio .container-fluid .col-xs-2 .hid {
     visibility: hidden; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .puntoMes {
-    margin-top: 6%; }
+    margin-top: 6%;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover div {
-    margin-top: 20%; }
+    margin-top: 20%;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover h4 {
-    margin-top: 20%; }
+    margin-top: 20%;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .hid {
     visibility: visible; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover p {
     margin-top: 7%;
-    margin-right: -8%; }
+    margin-right: -8%;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover {
     min-height: 100vh;
     margin-top: 0%;
-    transition: 1s;
+    transition: 0.9s ease;
     background-color: rgba(255, 255, 255, 0.3); }
   #fullpage #portafolio .container-fluid .col-xs-2:hover span {
-    margin-right: 25px !important; }
+    margin-right: 25px !important;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .descarga {
     margin-top: 0%;
     padding: 5%;
-    margin-right: -16px; }
+    margin-right: -16px;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .descarga img {
     height: 0.8em;
-    width: 0.8em; }
+    width: 0.8em;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .descripcion, #fullpage #portafolio .container-fluid .col-xs-2:hover .url {
-    margin-top: 6.5%; }
+    margin-top: 6.5%;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover img {
     margin-top: 16.5%;
     display: block;
     margin-right: -8%;
-    height: 19em; }
+    height: 19em;
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover h2, #fullpage #portafolio .container-fluid .col-xs-2:hover h3 {
     margin-top: 25%;
-    transition: 1s; }
+    transition: 0.9s ease; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-md, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
     display: initial !important; }
 #fullpage #equipo .container-fluid .col-xs-2 {
@@ -234,7 +247,8 @@ body {
     width: 3em;
     height: 3em; }
 #fullpage #contacto .mellow-dow {
-  margin-top: 50%; }
+  margin-top: 110px;
+  width: 10vw; }
 #fullpage #contacto .contactanos {
   height: 25em;
   width: 70%;
