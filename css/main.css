@@ -48,6 +48,9 @@ body {
     -webkit-animation-name: bounce;
     animation-name: bounce; }
 
+#fullpage .modal-body {
+  height: 80vh !important;
+  padding: 0px !important; }
 #fullpage #home {
   background-image: url(../images/w.png);
   background-repeat: no-repeat;
@@ -161,6 +164,8 @@ body {
       width: 0.8em; }
   #fullpage #portafolio .container-fluid .col-xs-2 .hid {
     visibility: hidden; }
+  #fullpage #portafolio .container-fluid .col-xs-2 .esconder {
+    display: none; }
   #fullpage #portafolio .container-fluid .col-xs-2:hover .puntoMes {
     margin-top: 6%;
     transition: 0.9s ease; }
@@ -205,8 +210,8 @@ body {
   #fullpage #portafolio .container-fluid .col-xs-2:hover h2, #fullpage #portafolio .container-fluid .col-xs-2:hover h3 {
     margin-top: 25%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-lg, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-md, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-sm, #fullpage #portafolio .container-fluid .col-xs-2:hover .hidden-xs {
-    display: initial !important; }
+  #fullpage #portafolio .container-fluid .col-xs-2:hover .esconder {
+    display: initial; }
 #fullpage #equipo .container-fluid .col-xs-2 {
   background-color: rgba(255, 255, 255, 0.3);
   min-height: 100vh;

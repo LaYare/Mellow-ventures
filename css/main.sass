@@ -65,6 +65,10 @@ body
     animation-name: bounce
 
 #fullpage
+  .modal-body
+    height: 80vh !important
+    padding: 0px !important
+
   #home
     background-image: url(../images/w.png)
     background-repeat: no-repeat
@@ -204,6 +208,9 @@ body
         .hid
           visibility: hidden
 
+        .esconder
+          display: none
+
         &:hover .puntoMes
           margin-top: 6%
           transition: 0.9s ease
@@ -260,8 +267,8 @@ body
           margin-top: 25%
           transition: 0.9s ease
 
-        &:hover .hidden-lg, &:hover .hidden-md, &:hover .hidden-sm, &:hover .hidden-xs
-          display: initial !important
+        &:hover .esconder
+          display: initial
 
   #equipo
     .container-fluid
