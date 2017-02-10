@@ -15,11 +15,33 @@
   <div id="fullpage">
     <!-- HOME -->
     <div class="section" id="home" data-anchor="home1">
+      <nav class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="images/logo.png" alt="Logo de Mellow" class="mellow" />
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home1">NOSOTROS</a></li>
+            <li><a href="#portafolio1">PORTAFOLIO</a></li>
+            <li><a href="#equipo1">EQUIPO</a></li>
+            <li><a href="#contacto1">CONTACTO</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-2">
-          <img src="images/icono.png" alt="Icono de Mellow" class="mgt icono" />
+          <img src="images/icono.png" alt="Icono de Mellow" class="mgt icono hidden-xs" />
         </div>
-        <div class="col-xs-9 col-sm-9 col-md-10 text-center">
+        <div class="col-xs-9 col-sm-9 col-md-10 text-center hidden-xs">
           <img src="images/logo.png" alt="Logo de Mellow" class="mellow" />
         </div>
       </div>
@@ -46,7 +68,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xs-offset-11 col-xs-1">
+        <div class="col-xs-offset-11 col-xs-1 hidden-xs">
           <a href="http://mellow.cc" target="_blank">
             <div class="sello"></div>
           </a>
@@ -56,16 +78,17 @@
     <!-- PORTAFOLIO -->
     <div class="section" id="portafolio" data-anchor="portafolio1">
       <div class="row">
-        <div class="col-xs-2 text-center">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+          <h1>PORTAFOLIO</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 text-right">
           <div class="container-fluid">
-            <div class="col-xs-offset-1 col-xs-2">
+            <div class="col-sm-offset-1 col-xs-12 col-sm-2">
               <div></div>
               <h4>2014</h4>
-              <div class="puntoMes hid"></div>
+              <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes">Junio</small>
               <h3>ALLGO</h3>
               <small>CIUDAD DE MÉXICO</small>
@@ -90,11 +113,11 @@
               </a>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-sm-2">
               <div></div>
               <h4>2015</h4>
-              <div class="puntoMes hid"></div>
-              <small class="esconder">Junio</small>
+              <div class="puntoMes hid hidden-xs"></div>
+              <small class="esconder">Agosto</small>
               <h3>ROYAL</h3>
               <small>CIUDAD DE MÉXICO</small>
               <small class="esconder descripcion">Royal está transformando la forma en que el alcohol es vendido y promocionado en una industría de oligopolios. Entrega alcohol a domicilio en minutos y analiza la industría segundo a segundo.</small>
@@ -117,11 +140,11 @@
 
             </div>
 
-            <div class="col-xs-2 app">
+            <div class="col-xs-12 col-sm-2 app">
               <div></div>
               <h4>2015</h4>
-              <div class="puntoMes hid"></div>
-              <small class="esconder">Junio</small>
+              <div class="puntoMes hid hidden-xs"></div>
+              <small class="esconder">Noviembre</small>
               <h3>RETO</h3>
               <small>REPÚBLICA MEXICANA</small>
               <small class="esconder descripcion">Reto es una plataforma online que ayuda a estudiantes a preparase y capacitarse para distintas certificaciones y evaluaciones entre ellas el ENARM, examenes de admisión de la UNAM, UAM y el Poli. </small>
@@ -143,11 +166,11 @@
               </a>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-sm-2">
               <div></div>
-              <h4>2015</h4>
-              <div class="puntoMes hid"></div>
-              <small class="esconder mes">Junio</small>
+              <h4>2016</h4>
+              <div class="puntoMes hid hidden-xs"></div>
+              <small class="esconder mes">Diciembre</small>
               <h2>MELLOW</br>
               CONSULTING</h2>
               <small>CIUDAD DE MÉXICO</small>
@@ -170,11 +193,11 @@
               </a>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-sm-2">
               <div></div>
-              <h4>2016</h4>
-              <div class="puntoMes hid"></div>
-              <small class="esconder mes">Junio</small>
+              <h4>2017</h4>
+              <div class="puntoMes hid hidden-xs"></div>
+              <small class="esconder mes">Enero</small>
               <h2>TALLER</br>
               FORMA</h2>
               <small>CIUDAD DE MÉXICO</small>
@@ -201,6 +224,7 @@
     </div>
     <!-- EQUIPO -->
     <div class="section" id="equipo" data-anchor="equipo1">
+      <a name="tres"></a>
       <div class="row" onScroll="ocultar()">
         <div class="col-xs-2 text-center">
         </div>
@@ -251,6 +275,7 @@
     </div>
     <!-- CONTACTO -->
     <div class="section" id="contacto" data-anchor="contacto1">
+      <a name="cuatro"></a>
       <div class="row">
         <div class="col-xs-2 text-center">
         </div>

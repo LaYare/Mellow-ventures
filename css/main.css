@@ -47,6 +47,20 @@ body {
   body .bounce {
     -webkit-animation-name: bounce;
     animation-name: bounce; }
+  body .navbar-default {
+    background-color: transparent !important;
+    border: none !important; }
+  body .navbar-toggle {
+    border: none !important;
+    float: left !important; }
+  body .icon-bar {
+    background-color: #ffffff !important; }
+  body .navbar-default .navbar-toggle:hover {
+    background-color: transparent !important; }
+  body .navbar-default .navbar-collapse, body .navbar-default .navbar-form {
+    border-color: transparent !important; }
+  body .navbar-default .navbar-nav li a {
+    color: #ffffff !important; }
 
 #fullpage .modal-body {
   height: 80vh !important;
@@ -101,12 +115,12 @@ body {
     position: relative;
     margin-top: -2vh;
     z-index: 1; }
-#fullpage #portafolio .container-fluid .col-xs-2 {
+#fullpage #portafolio .container-fluid .col-sm-2 {
   border-right: 1px solid #ffffff;
   min-height: 38em;
   text-align: right;
   margin-top: 15vh; }
-  #fullpage #portafolio .container-fluid .col-xs-2 div {
+  #fullpage #portafolio .container-fluid .col-sm-2 div {
     width: 9px;
     height: 9px;
     border-radius: 100%;
@@ -115,7 +129,7 @@ body {
     position: relative;
     float: right !important;
     margin-right: -20px; }
-  #fullpage #portafolio .container-fluid .col-xs-2 .puntoMes {
+  #fullpage #portafolio .container-fluid .col-sm-2 .puntoMes {
     width: 14px;
     height: 14px;
     border-radius: 100%;
@@ -124,33 +138,33 @@ body {
     position: relative;
     float: right !important;
     margin-right: -22px; }
-  #fullpage #portafolio .container-fluid .col-xs-2 .mes {
+  #fullpage #portafolio .container-fluid .col-sm-2 .mes {
     margin-top: 8%; }
-  #fullpage #portafolio .container-fluid .col-xs-2 h4 {
+  #fullpage #portafolio .container-fluid .col-sm-2 h4 {
     font-weight: 900;
     text-align: right;
     margin-top: -10px;
     letter-spacing: 2px; }
-  #fullpage #portafolio .container-fluid .col-xs-2 h2 {
+  #fullpage #portafolio .container-fluid .col-sm-2 h2 {
     text-align: right;
     margin-top: 238%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
-  #fullpage #portafolio .container-fluid .col-xs-2 h3 {
+  #fullpage #portafolio .container-fluid .col-sm-2 h3 {
     text-align: right;
     margin-top: 249%;
     margin-bottom: 0px;
     font-size: 1.5em;
     transition: 1s; }
-  #fullpage #portafolio .container-fluid .col-xs-2 small {
+  #fullpage #portafolio .container-fluid .col-sm-2 small {
     float: right;
     font-size: 10px;
     font-weight: 500; }
-  #fullpage #portafolio .container-fluid .col-xs-2 span {
+  #fullpage #portafolio .container-fluid .col-sm-2 span {
     font-size: 10px;
     font-weight: 500; }
-  #fullpage #portafolio .container-fluid .col-xs-2 a .descarga {
+  #fullpage #portafolio .container-fluid .col-sm-2 a .descarga {
     height: 7vh;
     width: 7vh;
     cursor: pointer;
@@ -159,58 +173,58 @@ body {
     background-color: #7E05E8;
     display: inline-block;
     color: #ffffff; }
-    #fullpage #portafolio .container-fluid .col-xs-2 a .descarga img {
+    #fullpage #portafolio .container-fluid .col-sm-2 a .descarga img {
       height: 0.8em;
       width: 0.8em; }
-  #fullpage #portafolio .container-fluid .col-xs-2 .hid {
+  #fullpage #portafolio .container-fluid .col-sm-2 .hid {
     visibility: hidden; }
-  #fullpage #portafolio .container-fluid .col-xs-2 .esconder {
+  #fullpage #portafolio .container-fluid .col-sm-2 .esconder {
     display: none; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .puntoMes {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .puntoMes {
     margin-top: 6%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover div {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover div {
     margin-top: 20%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover h4 {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover h4 {
     margin-top: 20%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .hid {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .hid {
     visibility: visible; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover p {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover p {
     margin-top: 7%;
     margin-right: -8%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover {
     min-height: 100vh;
     margin-top: 0%;
     transition: 0.9s ease;
     background-color: rgba(255, 255, 255, 0.3); }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover span {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover span {
     margin-right: 25px !important;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .descarga {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .descarga {
     margin-top: 0%;
     padding: 5%;
     margin-right: -16px;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .descarga img {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .descarga img {
     height: 0.8em;
     width: 0.8em;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .descripcion, #fullpage #portafolio .container-fluid .col-xs-2:hover .url {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .descripcion, #fullpage #portafolio .container-fluid .col-sm-2:hover .url {
     margin-top: 6.5%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover img {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover img {
     margin-top: 16.5%;
     display: block;
     margin-right: -8%;
     height: 19em;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover h2, #fullpage #portafolio .container-fluid .col-xs-2:hover h3 {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover h2, #fullpage #portafolio .container-fluid .col-sm-2:hover h3 {
     margin-top: 25%;
     transition: 0.9s ease; }
-  #fullpage #portafolio .container-fluid .col-xs-2:hover .esconder {
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .esconder {
     display: initial; }
 #fullpage #equipo .container-fluid .col-xs-2 {
   background-color: rgba(255, 255, 255, 0.3);
@@ -317,5 +331,71 @@ body {
       background: transparent; }
       #fullpage #contacto .form .correo .send img {
         width: 15px; }
+
+@media (max-width: 767px) {
+  body {
+    background: url(../images/colors.png);
+    animation: none; }
+
+  #fp-nav ul,
+  .fp-slidesNav ul {
+    display: none; }
+
+  #fullpage #home h1 {
+    margin-top: 15vh;
+    font-size: 35px; }
+
+  #fullpage #home {
+    background-image: url(../images/w.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw 80vh; }
+
+  #fullpage #home small {
+    letter-spacing: 2px;
+    font-size: 10px;
+    padding: 5px;
+    margin-top: 5vh; }
+
+  #fullpage #home .mellow {
+    margin-left: 15vw;
+    margin-top: 6vh;
+    height: 9vh; }
+
+  #fullpage #home .reporte {
+    margin-top: 5%; }
+
+  #fullpage #portafolio .container-fluid .col-xs-12 {
+    border-left: 1px solid #ffffff !important;
+    border-right: none;
+    min-height: 18vh;
+    text-align: left;
+    margin-top: 0vh; }
+
+  #fullpage #portafolio .container-fluid .col-sm-2 h2 {
+    text-align: left;
+    margin-top: 2%; }
+
+  #fullpage #portafolio .container-fluid .col-sm-2 h3 {
+    text-align: left;
+    margin-top: 4%; }
+
+  #fullpage #portafolio .container-fluid .col-sm-2 h4 {
+    font-weight: 900;
+    text-align: left;
+    margin-top: 0px;
+    letter-spacing: 2px; }
+
+  #fullpage #portafolio .container-fluid .col-sm-2 small {
+    float: left;
+    font-size: 10px;
+    font-weight: 500; }
+
+  #fullpage #portafolio .container-fluid .col-sm-2 div {
+    width: 13px;
+    height: 13px;
+    float: left !important;
+    margin-left: -21px;
+    margin-top: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
