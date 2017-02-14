@@ -15,7 +15,7 @@
   <div id="fullpage">
     <!-- HOME -->
     <div class="section" id="home" data-anchor="home1">
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default hidden-md hidden-sm hidden-lg" role="navigation">
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -84,139 +84,222 @@
       </div>
       <div class="row">
         <div class="col-xs-12 text-right">
-          <div class="container-fluid">
+          <div class="container-fluid responsive">
             <div class="col-sm-offset-1 col-xs-12 col-sm-2">
-              <div></div>
-              <h4>2014</h4>
+              <div class="puntito"></div>
+              <h4 class="hidden-xs">2014</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg">junio 2014</h5>
               <div class="puntoMes hid hidden-xs"></div>
-              <small class="esconder mes">Junio</small>
-              <h3>ALLGO</h3>
-              <small>CIUDAD DE MÉXICO</small>
-              <small class="esconder">
-                Allgo es una plataforma en donde por un lado el usuario puede encontrar todos los eventos de la ciudad sin importar promotor, empresa de boletaje o recinto. Por otro lado, logrando que los promotores conozcan mejor a su audiencia y sobretodo desplacen una mayor cantidad de boletos.
-              </small>
-              <small class="esconder url">www.appreto.mx</small>
-              <img src="images/app.jpg" alt="app reto" class="img-responsive esconder">
-              <span class="esconder">Descarga PDF</span>
-
-              <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
-                <div class="descarga hidden-xs  esconder">
-                  <img src="images/arrow-down.png" class="hidden-xs esconder" />
+              <small class="esconder mes hidden-xs">Junio</small>
+              <div class="row">
+                <div class="col-xs-6 col-md-12">
+                  <h3 class="drag">ALLGO</h3>
+                  <small>CIUDAD DE MÉXICO</small>
                 </div>
-              </a>
-
-              <!-- boton modal -->
-              <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Allgo">
-                <div class="descarga esconder hidden-lg hidden-md hidden-sm">
-                  <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                <div class="col-xs-6 hidden-md hidden-lg text-right">
+                  <button data-toggle="collapse" data-target="#allgo"><img src="images/down.png" /></button>
                 </div>
-              </a>
+              </div>
+              <div class="desplegable" id="allgo" class="collapse">
+                <div class="row hidden-md hidden-lg">
+                  <div class="col-xs-8">
+                    <img src="images/allgo.png" alt="app reto" class="img-responsive imagenR esconder">
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
+                    <!-- boton modal -->
+                    <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Allgo">
+                      <div class="descarga esconder hidden-lg hidden-md hidden-sm">
+                        <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <small class="esconder">
+                  Allgo es una plataforma en donde por un lado el usuario puede encontrar todos los eventos de la ciudad sin importar promotor, empresa de boletaje o recinto. Por otro lado, logrando que los promotores conozcan mejor a su audiencia y sobretodo desplacen una mayor cantidad de boletos.
+                </small>
+                <small class="esconder url">www.appreto.mx</small>
+                <img src="images/allgo.png" alt="app reto" class="img-responsive esconder hidden-xs">
+                <span class="esconder hidden-xs">Descarga PDF</span>
+
+                <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
+                  <div class="descarga hidden-xs  esconder">
+                    <img src="images/arrow-down.png" class="hidden-xs esconder" />
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="col-xs-12 col-sm-2">
-              <div></div>
-              <h4>2015</h4>
+              <div class="puntito"></div>
+              <h4 class="hidden-xs">2015</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg">agosto 2015</h5>
               <div class="puntoMes hid hidden-xs"></div>
-              <small class="esconder">Agosto</small>
-              <h3>ROYAL</h3>
-              <small>CIUDAD DE MÉXICO</small>
-              <small class="esconder descripcion">Royal está transformando la forma en que el alcohol es vendido y promocionado en una industría de oligopolios. Entrega alcohol a domicilio en minutos y analiza la industría segundo a segundo.</small>
-              <small class="esconder url">www.appreto.mx</small>
-              <img src="images/app.jpg" alt="app reto" class="img-responsive esconder">
-              <span class="esconder">Descarga PDF</span>
-
-              <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
-                <div class="descarga hidden-xs  esconder">
-                  <img src="images/arrow-down.png" class="hidden-xs esconder" />
+              <small class="esconder mes hidden-xs">Agosto</small>
+              <div class="row">
+                <div class="col-xs-6 col-md-12">
+                  <h3 class="drag">ROYAL</h3>
+                  <small>CIUDAD DE MÉXICO</small>
                 </div>
-              </a>
-
-              <!-- boton modal -->
-              <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Royal">
-                <div class="descarga esconder hidden-lg hidden-md hidden-sm">
-                  <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                <div class="col-xs-6 hidden-md hidden-lg text-right">
+                  <button data-toggle="collapse" data-target="#royal"><img src="images/down.png" /></button>
                 </div>
-              </a>
-
+              </div>
+              <div class="desplegable" id="royal" class="collapse">
+                <div class="row hidden-md hidden-lg">
+                  <div class="col-xs-8">
+                    <img src="images/royal.png" alt="app reto" class="img-responsive imagenR esconder">
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
+                    <!-- boton modal -->
+                    <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Royal">
+                      <div class="descarga esconder hidden-lg hidden-md hidden-sm">
+                        <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <small class="esconder descripcion">Royal está transformando la forma en que el alcohol es vendido y promocionado en una industría de oligopolios. Entrega alcohol a domicilio en minutos y analiza la industría segundo a segundo.</small>
+                <small class="esconder url">www.appreto.mx</small>
+                <img src="images/royal.png" alt="app reto" class="img-responsive esconder hidden-xs">
+                <span class="esconder hidden-xs">Descarga PDF</span>
+                <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
+                  <div class="descarga hidden-xs  esconder">
+                    <img src="images/arrow-down.png" class="hidden-xs esconder" />
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="col-xs-12 col-sm-2 app">
-              <div></div>
-              <h4>2015</h4>
+              <div class="puntito"></div>
+              <h4 class="hidden-xs">2015</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg">noviembre 2015</h5>
               <div class="puntoMes hid hidden-xs"></div>
-              <small class="esconder">Noviembre</small>
-              <h3>RETO</h3>
-              <small>REPÚBLICA MEXICANA</small>
-              <small class="esconder descripcion">Reto es una plataforma online que ayuda a estudiantes a preparase y capacitarse para distintas certificaciones y evaluaciones entre ellas el ENARM, examenes de admisión de la UNAM, UAM y el Poli. </small>
-              <small class="esconder url">www.appreto.mx</small>
-              <img src="images/app.jpg" alt="app reto" class="img-responsive esconder">
-              <span class="esconder">Descarga PDF</span>
-
-              <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
-                <div class="descarga hidden-xs  esconder">
-                  <img src="images/arrow-down.png" class="hidden-xs esconder" />
+              <small class="esconder mes hidden-xs">Noviembre</small>
+              <div class="row">
+                <div class="col-xs-6 col-md-12">
+                  <h3 class="drag">RETO</h3>
+                  <small>CIUDAD DE MÉXICO</small>
                 </div>
-              </a>
-
-              <!-- boton modal -->
-              <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Reto">
-                <div class="descarga esconder hidden-lg hidden-md hidden-sm">
-                  <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                <div class="col-xs-6 hidden-md hidden-lg text-right">
+                  <button data-toggle="collapse" data-target="#reto"><img src="images/down.png" /></button>
                 </div>
-              </a>
+              </div>
+              <div class="desplegable" id="reto" class="collapse">
+                <div class="row hidden-md hidden-lg">
+                  <div class="col-xs-8">
+                    <img src="images/reto.png" alt="app reto" class="img-responsive imagenR esconder">
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
+                    <!-- boton modal -->
+                    <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Reto">
+                      <div class="descarga esconder hidden-lg hidden-md hidden-sm">
+                        <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <small class="esconder descripcion">Reto es una plataforma online que ayuda a estudiantes a preparase y capacitarse para distintas certificaciones y evaluaciones entre ellas el ENARM, examenes de admisión de la UNAM, UAM y el Poli. </small>
+                <small class="esconder url">www.appreto.mx</small>
+                <img src="images/reto.png" alt="app reto" class="img-responsive esconder hidden-xs">
+                <span class="esconder hidden-xs">Descarga PDF</span>
+
+                <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
+                  <div class="descarga hidden-xs  esconder">
+                    <img src="images/arrow-down.png" class="hidden-xs esconder" />
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="col-xs-12 col-sm-2">
-              <div></div>
-              <h4>2016</h4>
+              <div class="puntito"></div>
+              <h4 class="hidden-xs">2016</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg">diciembre 2016</h5>
               <div class="puntoMes hid hidden-xs"></div>
-              <small class="esconder mes">Diciembre</small>
-              <h2>MELLOW</br>
-              CONSULTING</h2>
-              <small>CIUDAD DE MÉXICO</small>
-              <small class="esconder descripcion">Consultoría digital enfocada en estrategia de producto, branding, diseño UX/UI y desarrollo de software.</small>
-              <small class="esconder url">www.appreto.mx</small>
-              <img src="images/app.jpg" alt="app reto" class="img-responsive esconder">
-              <span class="esconder">Descarga PDF</span>
-
-              <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
-                <div class="descarga hidden-xs  esconder">
-                  <img src="images/arrow-down.png" class="hidden-xs esconder" />
+              <small class="esconder mes hidden-xs">Diciembre</small>
+              <div class="row">
+                <div class="col-xs-6 col-md-12">
+                  <h2 class="drag02">MELLOW</br>
+                  CONSULTING</h2>
+                  <small>CIUDAD DE MÉXICO</small>
                 </div>
-              </a>
-
-              <!-- boton modal -->
-              <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Mellow">
-                <div class="descarga esconder hidden-lg hidden-md hidden-sm">
-                  <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                <div class="col-xs-6 hidden-md hidden-lg text-right">
+                  <button data-toggle="collapse" data-target="#mellow"><img src="images/down.png" /></button>
                 </div>
-              </a>
+              </div>
+              <div class="desplegable" id="mellow" class="collapse">
+                <div class="row hidden-md hidden-lg">
+                  <div class="col-xs-8">
+                    <img src="images/mellow.png" alt="app reto" class="img-responsive imagenR esconder">
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
+                    <!-- boton modal -->
+                    <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Mellow">
+                      <div class="descarga esconder hidden-lg hidden-md hidden-sm">
+                        <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <small class="esconder descripcion">Consultoría digital enfocada en estrategia de producto, branding, diseño UX/UI y desarrollo de software.</small>
+                <small class="esconder url">www.appreto.mx</small>
+                <img src="images/mellow.png" alt="app reto" class="img-responsive esconder hidden-xs">
+                <span class="esconder hidden-xs">Descarga PDF</span>
+
+                <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
+                  <div class="descarga hidden-xs  esconder">
+                    <img src="images/arrow-down.png" class="hidden-xs esconder " />
+                  </div>
+                </a>
+              </div>
             </div>
 
             <div class="col-xs-12 col-sm-2">
-              <div></div>
-              <h4>2017</h4>
+              <div class="puntito"></div>
+              <h4 class="hidden-xs">2017</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg">Enero 2017</h5>
               <div class="puntoMes hid hidden-xs"></div>
-              <small class="esconder mes">Enero</small>
-              <h2>TALLER</br>
-              FORMA</h2>
-              <small>CIUDAD DE MÉXICO</small>
-              <small class="esconder descripcion">Forma es un taller de corte, ensamble y manufactura de productos de madera, acrílico y algunos otros materiales.  A travéz de tecnología de punta, excelente diseño mexicano y trabajo a mano de alta calidad se logra entregar productos de lujo para producción pequeña o a gran escala.</small>
-              <small class="esconder url">www.appreto.mx</small>
-              <img src="images/app.jpg" alt="app reto" class="img-responsive esconder">
-              <span class="esconder">Descarga PDF</span>
-              <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
-                <div class="descarga hidden-xs  esconder">
-                  <img src="images/arrow-down.png" class="hidden-xs esconder" />
+              <small class="esconder mes hidden-xs">Enero</small>
+              <div class="row">
+                <div class="col-xs-6 col-md-12">
+                  <h2 class="drag02">TALLER</br>
+                  FORMA</h2>
+                  <small>CIUDAD DE MÉXICO</small>
                 </div>
-              </a>
-
-              <!-- boton modal -->
-              <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Forma">
-                <div class="descarga esconder hidden-lg hidden-md hidden-sm">
-                  <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                <div class="col-xs-6 text-right hidden-md hidden-lg">
+                  <button data-toggle="collapse" data-target="#forma"><img src="images/down.png" /></button>
                 </div>
-              </a>
+              </div>
+              <div class="desplegable" id="forma" class="collapse">
+                <div class="row hidden-md hidden-lg">
+                  <div class="col-xs-8">
+                    <img src="images/forma.png" alt="app reto" class="img-responsive imagenR esconder">
+                  </div>
+                  <div class="col-xs-4">
+                    <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
+                    <!-- boton modal -->
+                    <a type="button" class="text-center esconder hidden-lg hidden-md hidden-sm" data-toggle="modal" data-target="#Forma">
+                      <div class="descarga esconder hidden-lg hidden-md hidden-sm">
+                        <img src="images/arrow-down.png" class="esconder animated infinite bounce center-block hidden-lg hidden-md hidden-sm" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <small class="esconder descripcion">Forma es un taller de corte, ensamble y manufactura de productos de madera, acrílico y algunos otros materiales.  A travéz de tecnología de punta, excelente diseño mexicano y trabajo a mano de alta calidad se logra entregar productos de lujo para producción pequeña o a gran escala.</small>
+                <small class="esconder url">www.appreto.mx</small>
+                <img src="images/forma.png" alt="app reto" class="img-responsive esconder hidden-xs">
+                <span class="esconder hidden-xs">Descarga PDF</span>
+                <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
+                  <div class="descarga hidden-xs  esconder">
+                    <img src="images/arrow-down.png" class="hidden-xs esconder" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -233,10 +316,10 @@
         <div class="col-xs-12">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-offset-1 col-xs-2 text-center">
+              <div class="col-lg-offset-1 col-md-2 col-xs-12 text-center">
                 <span>NUESTRO EQUIPO</span>
               </div>
-              <div class="col-xs-2 text-center">
+              <div class="col-md-2 col-xs-12 text-center">
                 <div class="conte-persona">
                   <img src="images/Patricio.png" class="img-responsive persona" alt="Patricio Aznar" />
                 </div>
@@ -244,7 +327,7 @@
                 <p>Socio Fundador - Director de Operaciones</p>
                 <a href="https://www.linkedin.com/in/patricio-aznar-leon-de-la-barra-77a28683/" target="_blank"><img src="images/in.png" alt="in" /></a>
               </div>
-              <div class="col-xs-2 text-center">
+              <div class="col-md-2 col-xs-12 text-center">
                 <div class="conte-persona">
                   <img src="images/Carlos.png" class="img-responsive" alt="Patricio Aznar" />
                 </div>
@@ -252,7 +335,7 @@
                 <p>Socio Fundador - Director Comercial</p>
                 <a href="https://www.linkedin.com/in/carlos-roca-58933582" target="_blank"><img src="images/in.png" alt="in" /></a>
               </div>
-              <div class="col-xs-2 text-center">
+              <div class="col-md-2 col-xs-12 text-center">
                 <div class="conte-persona">
                   <img src="images/Andrea.png" class="img-responsive" alt="Patricio Aznar" />
                 </div>
@@ -260,7 +343,7 @@
                 <p>Director de Marketing y Desarollo de Negocios</p>
                 <a href="https://www.linkedin.com/in/andreapicardi" target="_blank"><img src="images/in.png" alt="in" /></a>
               </div>
-              <div class="col-xs-2 text-center">
+              <div class="col-md-2 col-xs-12 text-center">
                 <div class="conte-persona">
                   <img src="images/Marlene.png" class="img-responsive" alt="Marlene Ramos" />
                 </div>
@@ -284,18 +367,18 @@
         <div class="col-xs-12">
           <div class="container">
             <div class="row">
-              <div class="col-xs-offset-2 col-xs-12 contactanos text-center">
+              <div class="col-md-offset-2 col-xs-12 contactanos text-center">
                 <h1>CONTÁCTANOS</h1>
                 <p>FRANCISCO MARQUEZ #146, COL. CONDESA. CIUDAD DE MÉXICO</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-offset-2 col-xs-10 form">
+              <div class="col-md-offset-2 col-xs-10 form">
                 <div class="row">
-                  <div class="col-xs-6 text-center datos">
+                  <div class="col-xs-12 col-md-6 text-center datos">
                     +52 (55) 67.30.15.42 / hola@mellowventures.mx
                   </div>
-                  <div class="col-xs-6 correo">
+                  <div class="hidden-xs hidden-ms col-md-6 correo">
                     <div class="row">
                       <div class="col-xs-1">
                         <img src="images/mail.png">
@@ -315,10 +398,19 @@
             </div>
           </div>
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-offset-10 col-xs-2">
+            <div class="row hidden-xs hidden-sm">
+              <div class="col-md-offset-10 col-md-2 col-xs-12 text-center">
                 <img src="images/Sellos-02.png" alt="Sello Mellow Ventures" class="img-responsive mellow-sello" />
                 <img src="images/logo.png" alt="Logo Mellow Ventures" class="img-responsive mellow-dow" />
+              </div>
+            </div>
+            <div class="row hidden-md hidden-lg text-center">
+              <div class="col-xs-12">
+                <img src="images/Sellos-02.png" alt="Sello Mellow Ventures" class="img-responsive mellow center-block
+      center-block" />
+              </div>
+              <div class="col-xs-12">
+                <img src="images/logo.png" alt="Logo Mellow Ventures" class="img-responsive mellow2 center-block" />
               </div>
             </div>
           </div>

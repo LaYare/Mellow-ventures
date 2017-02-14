@@ -159,14 +159,14 @@ body
         text-align: right
         margin-top: 15vh
 
-        div
+        .puntito
           width: 9px
           height: 9px
           border-radius: 100%
           background-color: $morado
           border: 1px solid $blanco
           position: relative
-          float: right !important
+          float: right
           margin-right: -20px
 
         .puntoMes
@@ -176,8 +176,9 @@ body
           background-color: $morado
           border: 1px solid $blanco
           position: relative
-          float: right !important
+          float: right
           margin-right: -22px
+          margin-top: 8%
 
         .mes
           margin-top: 8%
@@ -188,24 +189,32 @@ body
           margin-top: -10px
           letter-spacing: 2px
 
-        h2
+        .drag02
           text-align: right
-          margin-top: 238%
+          margin-top: 60vh
           margin-bottom: 0px
           font-size: 1.5em
           transition: 1s
 
-        h3
+        .drag
           text-align: right
-          margin-top: 249%
-          margin-bottom: 0px
+          margin-top: 62vh
           font-size: 1.5em
           transition: 1s
+
+        .rotate
+          position: absolute
+          transform: rotate(-90deg)
+          margin-top: 23vh
 
         small
           float: right
           font-size: 10px
           font-weight: 500
+          margin-bottom: 8px
+
+        .url
+          margin-bottom: 25px
 
         span
           font-size: 10px
@@ -220,6 +229,8 @@ body
           background-color: $morado
           display: inline-block
           color: $blanco
+          margin-right: -15px
+          padding-top: 10px
 
           img
             height: 0.8em
@@ -231,68 +242,46 @@ body
         .esconder
           display: none
 
-        &:hover .puntoMes
-          margin-top: 6%
-          transition: 0.9s ease
-
-        &:hover div
-          margin-top: 20%
-          transition: 0.9s ease
-
-        &:hover h4
-          margin-top: 20%
-          transition: 0.9s ease
-
-        &:hover .hid
-          visibility: visible
-
-        &:hover p
-          margin-top: 7%
-          margin-right: -8%
-          transition: 0.9s ease
-
         &:hover
           min-height: 100vh
           margin-top: 0%
-          transition: 0.9s ease
+          transition: 1s
           background-color: rgba(255, 255, 255, 0.3)
 
-        &:hover span
-          margin-right: 25px !important
-          transition: 0.9s ease
+        &:hover .puntito
+          margin-top: 15%
 
-        &:hover .descarga
-          margin-top: 0%
-          padding: 5%
-          margin-right: -16px
-          transition: 0.9s ease
+        &:hover h4
+          margin-top: 15%
 
-        &:hover .descarga img
-          height: 0.8em
-          width: 0.8em
-          transition: 0.9s ease
+        &:hover a .descarga
+          height: 7vh
+          width: 7vh
+          cursor: pointer
+          border-radius: 0px !important
+          display: inline-block
+          margin-right: -15px
+          padding-top: 10px
 
-        &:hover .descripcion, &:hover .url
-          margin-top: 6.5%
-          transition: 0.9s ease
+        &:hover .drag
+          margin-top: 5%
+          transition: 1s
 
-        &:hover img
-          margin-top: 16.5%
-          display: block
-          margin-right: -8%
-          height: 19em
-          transition: 0.9s ease
+        &:hover .drag02
+          margin-top: 5%
+          transition: 1s
 
-        &:hover h2, &:hover h3
-          margin-top: 25%
-          transition: 0.9s ease
+        &:hover .hid
+          visibility: visible
+          transition: 1s
 
         &:hover .esconder
           display: initial
+          transition: 1s
 
   #equipo
     .container-fluid
-      .col-xs-2
+      .col-md-2
         background-color: rgba(255, 255, 255, 0.3)
         min-height: 100vh
         margin-top: 0%
@@ -425,66 +414,225 @@ body
 
 @media (max-width: 767px)
   body
-    background: url(../images/colors.png)
+    background: -webkit-linear-gradient(#EE4339, #102661)
+    background: -o-linear-gradient(#EE4339, #102661)
+    background: -moz-linear-gradient(#EE4339, #102661)
+    background: linear-gradient(#EE4339, #102661)
     animation: none
 
-  #fp-nav ul,
-  .fp-slidesNav ul
-    display: none
+    #fp-nav ul,
+    .fp-slidesNav ul
+      display: none
 
-  #fullpage #home h1
-    margin-top: 15vh
-    font-size: 35px
+    #fullpage #home h1
+      margin-top: 15vh
+      font-size: 35px
 
-  #fullpage #home
-    background-image: url(../images/w.png)
-    background-repeat: no-repeat
-    background-position: bottom
-    background-size: 100vw 80vh
+    #fullpage #home
+      background-image: url(../images/w.png)
+      background-repeat: no-repeat
+      background-position: bottom
+      background-size: 100vw 80vh
 
-  #fullpage #home small
-    letter-spacing: 2px
-    font-size: 10px
-    padding: 5px
-    margin-top: 5vh
+    #fullpage #home small
+      letter-spacing: 2px
+      font-size: 10px
+      padding: 5px
+      margin-top: 5vh
 
-  #fullpage #home .mellow
-    margin-left: 15vw
-    margin-top: 6vh
-    height: 9vh
+    #fullpage #home .mellow
+      margin-left: 15vw
+      margin-top: 6vh
+      height: 9vh
 
-  #fullpage #home .reporte
-    margin-top: 5%
+    #fullpage #home .reporte
+      margin-top: 5%
 
-  #fullpage #portafolio .container-fluid .col-xs-12
-    border-left: 1px solid $blanco !important
-    border-right: none
-    min-height: 18vh
-    text-align: left
-    margin-top: 0vh
+    #portafolio
+      .container-fluid
 
-  #fullpage #portafolio .container-fluid .col-sm-2 h2
-    text-align: left
-    margin-top: 2%
+      .responsive
+        min-height: 90vh !important
+        padding-top: 7.5vh
 
-  #fullpage #portafolio .container-fluid .col-sm-2 h3
-    text-align: left
-    margin-top: 4%
+        .col-sm-2
+          border-right: none !important
+          border-left: 1px solid $blanco
+          min-height: 2em !important
+          text-align: left !important
+          margin-top: 0vh !important
 
-  #fullpage #portafolio .container-fluid .col-sm-2 h4
-    font-weight: 900
-    text-align: left
-    margin-top: 0px
-    letter-spacing: 2px
+          .puntito
+            margin-top: 4%
+            position: relative
+            float: left !important
+            margin-left: -20px
 
-  #fullpage #portafolio .container-fluid .col-sm-2 small
-    float: left
-    font-size: 10px
-    font-weight: 500
+          .puntoMes
+            float: left !important
+            margin-left: -22px
+            margin-top: 8%
 
-  #fullpage #portafolio .container-fluid .col-sm-2 div
-    width: 13px
-    height: 13px
-    float: left !important
-    margin-left: -21px
-    margin-top: 15px
+          .mes
+            margin-top: 8%
+
+          h4
+            font-weight: 900
+            text-align: left
+            margin-top: -10px
+            letter-spacing: 2px
+
+          .drag02
+            text-align: left !important
+            margin-top: 0vh !important
+
+          .drag
+            text-align: left !important
+            margin-top: 0vh !important
+
+          small
+            float: left !important
+            font-size: 10px
+            font-weight: 500
+            margin-bottom: 8px
+
+          .url
+            margin-bottom: 25px
+
+          .imagenR
+            margin-left: 0px
+
+          span
+            font-size: 10px
+            font-weight: 500
+
+          a .descarga
+            height: 7vh
+            width: 7vh
+            border-radius: 0px !important
+            margin-right: -15px
+            padding-top: 10px
+
+          &:hover
+            min-height: 100vh
+            margin-top: 0%
+            transition: 0s
+            background-color: none
+
+          &:hover .puntito
+            margin-top: 4% !important
+
+          &:hover h4
+            margin-top: 15%
+
+          &:hover a .descarga
+            height: 7vh
+            width: 7vh
+            cursor: pointer
+            border-radius: 0px !important
+            display: inline-block
+            padding-top: 10px
+            margin-top: 29vh
+
+          &:hover .drag
+            margin-top: 5%
+            transition: 1s
+
+          &:hover .drag02
+            margin-top: 5%
+            transition: 1s
+
+          &:hover .hid
+            visibility: visible
+            transition: 1s
+
+          &:hover .esconder
+            display: initial
+            transition: 1s
+
+    #equipo
+      .container-fluid
+        .col-md-2
+          background-color: transparent !important
+          min-height: 18vh !important
+          margin-top: 0%
+          margin-bottom: 2vh !important
+          margin-right: 1%
+          padding-left: 0px !important
+          padding-right: 0px !important
+
+          span
+            width: 100% !important
+            font-size: 2em !important
+            position: absolute
+            margin-top: 5vh !important
+            transform: rotate(0deg) !important
+            font-weight: 500
+            margin-left: 0% !important
+            letter-spacing: 2px
+
+          .conte-persona
+            height: 80vh
+            margin-top: (-5vh) !important
+            margin-left: (-30px) !important
+            padding-left: 20vw !important
+            padding-right: 20vw !important
+
+            img
+              margin-top: 0%
+              -webkit-transform: scale(1) !important
+              transition: 0s
+
+              &:hover
+                -webkit-transform: scale(1) !important
+                transition: 0s
+
+    #contacto
+      .mellow-sello
+        width: 3vw
+        margin-top: 100px
+        margin-right: 1vw
+        display: inline !important
+
+      .contactanos
+        height: 25em
+        width: 100% !important
+        background-image: url(../images/mapa.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin-top: 20vh
+        padding-left: 0px !important
+        padding-right: 0px !important
+
+        h1
+          font-size: 2em !important
+          letter-spacing: 10px !important
+          position: absolute
+          left: 50%
+          top: 40%
+          transform: translate(-50%, -50%)
+          -webkit-transform: translate(-50%, -50%)
+
+        p
+          letter-spacing: 2px
+          position: absolute
+          left: 1% !important
+          top: 60%
+
+      .form
+        width: 100% !important
+        height: 3em
+        border: 1px solid $blanco
+
+        .datos
+          padding: 3% !important
+
+      .mellow
+        margin-top: 2em
+        width: 3em
+        height: 3em
+
+      .mellow2
+        width: 10em
+        height: 3em
