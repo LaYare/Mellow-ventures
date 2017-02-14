@@ -210,7 +210,7 @@ body
         small
           float: right
           font-size: 10px
-          font-weight: 500
+          font-weight: initial
           margin-bottom: 8px
 
         .url
@@ -235,6 +235,7 @@ body
           img
             height: 0.8em
             width: 0.8em
+            margin-left: -15px
 
         .hid
           visibility: hidden
@@ -247,6 +248,9 @@ body
           margin-top: 0%
           transition: 1s
           background-color: rgba(255, 255, 255, 0.3)
+
+        &:hover .desplegable
+          height: 65vh
 
         &:hover .puntito
           margin-top: 15%
@@ -263,6 +267,11 @@ body
           margin-right: -15px
           padding-top: 10px
 
+        &:hover a .descarga img
+          height: 0.8em
+          width: 0.8em
+          margin-left: (-0px) !important
+
         &:hover .drag
           margin-top: 5%
           transition: 1s
@@ -278,6 +287,7 @@ body
         &:hover .esconder
           display: initial
           transition: 1s
+          margin-left: 15px
 
   #equipo
     .container-fluid
@@ -424,9 +434,20 @@ body
     .fp-slidesNav ul
       display: none
 
+    #home
+      background-image: url(../images/w.png)
+      background-repeat: no-repeat
+      background-position: bottom center
+      background-size: 120vw 110vh
+      padding-bottom: 15vh
+
+    #home .descarga
+      border: 1px solid $blanco !important
+
     #fullpage #home h1
       margin-top: 15vh
-      font-size: 35px
+      font-size: 30px
+      letter-spacing: 11px
 
     #fullpage #home
       background-image: url(../images/w.png)
@@ -441,7 +462,7 @@ body
       margin-top: 5vh
 
     #fullpage #home .mellow
-      margin-left: 15vw
+      margin-left: 12vw
       margin-top: 6vh
       height: 9vh
 
@@ -449,7 +470,19 @@ body
       margin-top: 5%
 
     #portafolio
+      h1
+        font-size: 1.6em !important
+        letter-spacing: 5px
+
       .container-fluid
+
+      .opaco
+        background-color: rgba(255, 255, 255, 0.1)
+        margin-right: (-30px) !important
+        margin-left: (-30px) !important
+        padding-left: 15px !important
+        padding-right: 15px !important
+        margin-bottom: 2vh
 
       .responsive
         min-height: 90vh !important
@@ -462,8 +495,19 @@ body
           text-align: left !important
           margin-top: 0vh !important
 
+          .boton-responsive
+            background-color: transparent
+            border: none
+            margin-top: 4.5vh
+
+            img
+              width: 20px
+              height: 10px
+
           .puntito
-            margin-top: 4%
+            width: 10px !important
+            height: 10px !important
+            margin-top: 25px !important
             position: relative
             float: left !important
             margin-left: -20px
@@ -485,15 +529,17 @@ body
           .drag02
             text-align: left !important
             margin-top: 0vh !important
+            transition: 0s !important
 
           .drag
             text-align: left !important
             margin-top: 0vh !important
+            transition: 0s !important
 
           small
             float: left !important
             font-size: 10px
-            font-weight: 500
+            font-weight: initial !important
             margin-bottom: 8px
 
           .url
@@ -509,6 +555,7 @@ body
           a .descarga
             height: 7vh
             width: 7vh
+            border: 1px solid $blanco !important
             border-radius: 0px !important
             margin-right: -15px
             padding-top: 10px
@@ -516,11 +563,14 @@ body
           &:hover
             min-height: 100vh
             margin-top: 0%
-            transition: 0s
-            background-color: none
+            transition: 0s !important
+            background-color: transparent !important
+
+          &:hover .desplegable
+            height: auto !important
 
           &:hover .puntito
-            margin-top: 4% !important
+            margin-top: 25px !important
 
           &:hover h4
             margin-top: 15%
@@ -536,19 +586,20 @@ body
 
           &:hover .drag
             margin-top: 5%
-            transition: 1s
+            transition: 0s !important
 
           &:hover .drag02
             margin-top: 5%
-            transition: 1s
+            transition: 0s !important
 
           &:hover .hid
             visibility: visible
-            transition: 1s
+            transition: 0s !important
 
           &:hover .esconder
             display: initial
-            transition: 1s
+            transition: 0s !important
+            margin-left: 0px !important
 
     #equipo
       .container-fluid
@@ -556,25 +607,25 @@ body
           background-color: transparent !important
           min-height: 18vh !important
           margin-top: 0%
-          margin-bottom: 2vh !important
+          margin-bottom: 10vh !important
           margin-right: 1%
           padding-left: 0px !important
           padding-right: 0px !important
 
           span
             width: 100% !important
-            font-size: 2em !important
+            font-size: 1.6em !important
             position: absolute
             margin-top: 5vh !important
             transform: rotate(0deg) !important
             font-weight: 500
             margin-left: 0% !important
-            letter-spacing: 2px
+            letter-spacing: 5px
 
           .conte-persona
-            height: 80vh
+            height: 49vh !important
             margin-top: (-5vh) !important
-            margin-left: (-30px) !important
+            margin-left: 0px !important
             padding-left: 20vw !important
             padding-right: 20vw !important
 
@@ -586,6 +637,10 @@ body
               &:hover
                 -webkit-transform: scale(1) !important
                 transition: 0s
+
+          h4
+            margin-top: 5% !important
+            font-weight: 500
 
     #contacto
       .mellow-sello
@@ -601,7 +656,7 @@ body
         background-position: center
         background-size: cover
         background-repeat: no-repeat
-        margin-top: 20vh
+        margin-top: 10vh !important
         padding-left: 0px !important
         padding-right: 0px !important
 
@@ -627,12 +682,15 @@ body
 
         .datos
           padding: 3% !important
+          letter-spacing: 1px !important
 
       .mellow
         margin-top: 2em
-        width: 3em
-        height: 3em
+        width: 5em
+        height: 5em
+        margin-bottom: 20vh
 
       .mellow2
         width: 10em
         height: 3em
+        margin-top: 5vh

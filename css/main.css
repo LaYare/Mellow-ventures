@@ -164,7 +164,7 @@ body {
   #fullpage #portafolio .container-fluid .col-sm-2 small {
     float: right;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: initial;
     margin-bottom: 8px; }
   #fullpage #portafolio .container-fluid .col-sm-2 .url {
     margin-bottom: 25px; }
@@ -184,7 +184,8 @@ body {
     padding-top: 10px; }
     #fullpage #portafolio .container-fluid .col-sm-2 a .descarga img {
       height: 0.8em;
-      width: 0.8em; }
+      width: 0.8em;
+      margin-left: -15px; }
   #fullpage #portafolio .container-fluid .col-sm-2 .hid {
     visibility: hidden; }
   #fullpage #portafolio .container-fluid .col-sm-2 .esconder {
@@ -194,6 +195,8 @@ body {
     margin-top: 0%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .desplegable {
+    height: 65vh; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .puntito {
     margin-top: 15%; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover h4 {
@@ -206,6 +209,10 @@ body {
     display: inline-block;
     margin-right: -15px;
     padding-top: 10px; }
+  #fullpage #portafolio .container-fluid .col-sm-2:hover a .descarga img {
+    height: 0.8em;
+    width: 0.8em;
+    margin-left: 0px !important; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .drag {
     margin-top: 5%;
     transition: 1s; }
@@ -217,7 +224,8 @@ body {
     transition: 1s; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .esconder {
     display: initial;
-    transition: 1s; }
+    transition: 1s;
+    margin-left: 15px; }
 #fullpage #equipo .container-fluid .col-md-2 {
   background-color: rgba(255, 255, 255, 0.3);
   min-height: 100vh;
@@ -334,9 +342,18 @@ body {
     body #fp-nav ul,
     body .fp-slidesNav ul {
       display: none; }
+    body #home {
+      background-image: url(../images/w.png);
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 120vw 110vh;
+      padding-bottom: 15vh; }
+    body #home .descarga {
+      border: 1px solid #ffffff !important; }
     body #fullpage #home h1 {
       margin-top: 15vh;
-      font-size: 35px; }
+      font-size: 30px;
+      letter-spacing: 11px; }
     body #fullpage #home {
       background-image: url(../images/w.png);
       background-repeat: no-repeat;
@@ -348,11 +365,21 @@ body {
       padding: 5px;
       margin-top: 5vh; }
     body #fullpage #home .mellow {
-      margin-left: 15vw;
+      margin-left: 12vw;
       margin-top: 6vh;
       height: 9vh; }
     body #fullpage #home .reporte {
       margin-top: 5%; }
+    body #portafolio h1 {
+      font-size: 1.6em !important;
+      letter-spacing: 5px; }
+    body #portafolio .opaco {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-right: -30px !important;
+      margin-left: -30px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      margin-bottom: 2vh; }
     body #portafolio .responsive {
       min-height: 90vh !important;
       padding-top: 7.5vh; }
@@ -362,8 +389,17 @@ body {
         min-height: 2em !important;
         text-align: left !important;
         margin-top: 0vh !important; }
+        body #portafolio .responsive .col-sm-2 .boton-responsive {
+          background-color: transparent;
+          border: none;
+          margin-top: 4.5vh; }
+          body #portafolio .responsive .col-sm-2 .boton-responsive img {
+            width: 20px;
+            height: 10px; }
         body #portafolio .responsive .col-sm-2 .puntito {
-          margin-top: 4%;
+          width: 10px !important;
+          height: 10px !important;
+          margin-top: 25px !important;
           position: relative;
           float: left !important;
           margin-left: -20px; }
@@ -380,14 +416,16 @@ body {
           letter-spacing: 2px; }
         body #portafolio .responsive .col-sm-2 .drag02 {
           text-align: left !important;
-          margin-top: 0vh !important; }
+          margin-top: 0vh !important;
+          transition: 0s !important; }
         body #portafolio .responsive .col-sm-2 .drag {
           text-align: left !important;
-          margin-top: 0vh !important; }
+          margin-top: 0vh !important;
+          transition: 0s !important; }
         body #portafolio .responsive .col-sm-2 small {
           float: left !important;
           font-size: 10px;
-          font-weight: 500;
+          font-weight: initial !important;
           margin-bottom: 8px; }
         body #portafolio .responsive .col-sm-2 .url {
           margin-bottom: 25px; }
@@ -399,16 +437,19 @@ body {
         body #portafolio .responsive .col-sm-2 a .descarga {
           height: 7vh;
           width: 7vh;
+          border: 1px solid #ffffff !important;
           border-radius: 0px !important;
           margin-right: -15px;
           padding-top: 10px; }
         body #portafolio .responsive .col-sm-2:hover {
           min-height: 100vh;
           margin-top: 0%;
-          transition: 0s;
-          background-color: none; }
+          transition: 0s !important;
+          background-color: transparent !important; }
+        body #portafolio .responsive .col-sm-2:hover .desplegable {
+          height: auto !important; }
         body #portafolio .responsive .col-sm-2:hover .puntito {
-          margin-top: 4% !important; }
+          margin-top: 25px !important; }
         body #portafolio .responsive .col-sm-2:hover h4 {
           margin-top: 15%; }
         body #portafolio .responsive .col-sm-2:hover a .descarga {
@@ -421,37 +462,38 @@ body {
           margin-top: 29vh; }
         body #portafolio .responsive .col-sm-2:hover .drag {
           margin-top: 5%;
-          transition: 1s; }
+          transition: 0s !important; }
         body #portafolio .responsive .col-sm-2:hover .drag02 {
           margin-top: 5%;
-          transition: 1s; }
+          transition: 0s !important; }
         body #portafolio .responsive .col-sm-2:hover .hid {
           visibility: visible;
-          transition: 1s; }
+          transition: 0s !important; }
         body #portafolio .responsive .col-sm-2:hover .esconder {
           display: initial;
-          transition: 1s; }
+          transition: 0s !important;
+          margin-left: 0px !important; }
     body #equipo .container-fluid .col-md-2 {
       background-color: transparent !important;
       min-height: 18vh !important;
       margin-top: 0%;
-      margin-bottom: 2vh !important;
+      margin-bottom: 10vh !important;
       margin-right: 1%;
       padding-left: 0px !important;
       padding-right: 0px !important; }
       body #equipo .container-fluid .col-md-2 span {
         width: 100% !important;
-        font-size: 2em !important;
+        font-size: 1.6em !important;
         position: absolute;
         margin-top: 5vh !important;
         transform: rotate(0deg) !important;
         font-weight: 500;
         margin-left: 0% !important;
-        letter-spacing: 2px; }
+        letter-spacing: 5px; }
       body #equipo .container-fluid .col-md-2 .conte-persona {
-        height: 80vh;
+        height: 49vh !important;
         margin-top: -5vh !important;
-        margin-left: -30px !important;
+        margin-left: 0px !important;
         padding-left: 20vw !important;
         padding-right: 20vw !important; }
         body #equipo .container-fluid .col-md-2 .conte-persona img {
@@ -461,6 +503,9 @@ body {
           body #equipo .container-fluid .col-md-2 .conte-persona img:hover {
             -webkit-transform: scale(1) !important;
             transition: 0s; }
+      body #equipo .container-fluid .col-md-2 h4 {
+        margin-top: 5% !important;
+        font-weight: 500; }
     body #contacto .mellow-sello {
       width: 3vw;
       margin-top: 100px;
@@ -473,7 +518,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      margin-top: 20vh;
+      margin-top: 10vh !important;
       padding-left: 0px !important;
       padding-right: 0px !important; }
       body #contacto .contactanos h1 {
@@ -494,13 +539,16 @@ body {
       height: 3em;
       border: 1px solid #ffffff; }
       body #contacto .form .datos {
-        padding: 3% !important; }
+        padding: 3% !important;
+        letter-spacing: 1px !important; }
     body #contacto .mellow {
       margin-top: 2em;
-      width: 3em;
-      height: 3em; }
+      width: 5em;
+      height: 5em;
+      margin-bottom: 20vh; }
     body #contacto .mellow2 {
       width: 10em;
-      height: 3em; } }
+      height: 3em;
+      margin-top: 5vh; } }
 
 /*# sourceMappingURL=main.css.map */

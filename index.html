@@ -15,6 +15,7 @@
   <div id="fullpage">
     <!-- HOME -->
     <div class="section" id="home" data-anchor="home1">
+      <a name="home01"></a>
       <nav class="navbar navbar-default hidden-md hidden-sm hidden-lg" role="navigation">
 
         <div class="navbar-header">
@@ -29,10 +30,10 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home1">NOSOTROS</a></li>
-            <li><a href="#portafolio1">PORTAFOLIO</a></li>
-            <li><a href="#equipo1">EQUIPO</a></li>
-            <li><a href="#contacto1">CONTACTO</a></li>
+            <li><a href="#home01">NOSOTROS</a></li>
+            <li><a href="#portafolio01">PORTAFOLIO</a></li>
+            <li><a href="#equipo01">EQUIPO</a></li>
+            <li><a href="#contacto01">CONTACTO</a></li>
           </ul>
         </div>
       </nav>
@@ -77,6 +78,7 @@
     </div>
     <!-- PORTAFOLIO -->
     <div class="section" id="portafolio" data-anchor="portafolio1">
+      <a name="portafolio01"></a>
       <div class="row">
         <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
           <h1>PORTAFOLIO</h1>
@@ -88,16 +90,16 @@
             <div class="col-sm-offset-1 col-xs-12 col-sm-2">
               <div class="puntito"></div>
               <h4 class="hidden-xs">2014</h4>
-              <h5 class="hidden-sm hidden-md hidden-lg">junio 2014</h5>
               <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes hidden-xs">Junio</small>
-              <div class="row">
+              <div class="row opaco">
                 <div class="col-xs-6 col-md-12">
+                  <h5 class="hidden-sm hidden-md hidden-lg">junio 2014</h5>
                   <h3 class="drag">ALLGO</h3>
                   <small>CIUDAD DE MÉXICO</small>
                 </div>
                 <div class="col-xs-6 hidden-md hidden-lg text-right">
-                  <button data-toggle="collapse" data-target="#allgo"><img src="images/down.png" /></button>
+                  <button data-toggle="collapse" data-target="#allgo" class="boton-responsive"><img src="images/Flecha-01.png" /></button>
                 </div>
               </div>
               <div class="desplegable" id="allgo" class="collapse">
@@ -120,6 +122,8 @@
                 </small>
                 <small class="esconder url">www.appreto.mx</small>
                 <img src="images/allgo.png" alt="app reto" class="img-responsive esconder hidden-xs">
+              </div>
+              <div class="desc">
                 <span class="esconder hidden-xs">Descarga PDF</span>
 
                 <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
@@ -133,16 +137,16 @@
             <div class="col-xs-12 col-sm-2">
               <div class="puntito"></div>
               <h4 class="hidden-xs">2015</h4>
-              <h5 class="hidden-sm hidden-md hidden-lg">agosto 2015</h5>
               <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes hidden-xs">Agosto</small>
-              <div class="row">
+              <div class="row opaco">
                 <div class="col-xs-6 col-md-12">
+                  <h5 class="hidden-sm hidden-md hidden-lg">agosto 2015</h5>
                   <h3 class="drag">ROYAL</h3>
                   <small>CIUDAD DE MÉXICO</small>
                 </div>
                 <div class="col-xs-6 hidden-md hidden-lg text-right">
-                  <button data-toggle="collapse" data-target="#royal"><img src="images/down.png" /></button>
+                  <button data-toggle="collapse" data-target="#royal" class="boton-responsive"><img src="images/Flecha-01.png" /></button>
                 </div>
               </div>
               <div class="desplegable" id="royal" class="collapse">
@@ -163,6 +167,8 @@
                 <small class="esconder descripcion">Royal está transformando la forma en que el alcohol es vendido y promocionado en una industría de oligopolios. Entrega alcohol a domicilio en minutos y analiza la industría segundo a segundo.</small>
                 <small class="esconder url">www.appreto.mx</small>
                 <img src="images/royal.png" alt="app reto" class="img-responsive esconder hidden-xs">
+              </div>
+              <div class="desc">
                 <span class="esconder hidden-xs">Descarga PDF</span>
                 <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
                   <div class="descarga hidden-xs  esconder">
@@ -175,22 +181,42 @@
             <div class="col-xs-12 col-sm-2 app">
               <div class="puntito"></div>
               <h4 class="hidden-xs">2015</h4>
-              <h5 class="hidden-sm hidden-md hidden-lg">noviembre 2015</h5>
               <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes hidden-xs">Noviembre</small>
-              <div class="row">
+              <div class="row opaco">
                 <div class="col-xs-6 col-md-12">
+                  <h5 class="hidden-sm hidden-md hidden-lg">noviembre 2015</h5>
                   <h3 class="drag">RETO</h3>
                   <small>CIUDAD DE MÉXICO</small>
                 </div>
                 <div class="col-xs-6 hidden-md hidden-lg text-right">
-                  <button data-toggle="collapse" data-target="#reto"><img src="images/down.png" /></button>
+                  <button data-toggle="collapse" data-target="#reto" class="boton-responsive"><img src="images/Flecha-01.png" /></button>
                 </div>
               </div>
               <div class="desplegable" id="reto" class="collapse">
                 <div class="row hidden-md hidden-lg">
                   <div class="col-xs-8">
-                    <img src="images/reto.png" alt="app reto" class="img-responsive imagenR esconder">
+                    <!-- carrusel -->
+                    <div id="myCarousel" class="carousel slide esconder" data-ride="carousel">
+                      <!-- Indicators -->
+                      <!-- <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                      </ol> -->
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="images/reto.png" alt="app reto" class="img-responsive imagenR esconder">
+                        </div>
+
+                        <div class="item">
+                          <img src="images/reto02.png" alt="app reto" class="img-responsive imagenR esconder"> </div>
+                      </div>
+                    </div>
+                    <!-- termina carrusel -->
+
+                    <!-- <img src="images/reto.png" alt="app reto" class="img-responsive imagenR esconder"> -->
                   </div>
                   <div class="col-xs-4">
                     <span class="esconder hidden-sm hidden-md hidden-lg rotate">Abrir <br> PDF</span>
@@ -205,6 +231,8 @@
                 <small class="esconder descripcion">Reto es una plataforma online que ayuda a estudiantes a preparase y capacitarse para distintas certificaciones y evaluaciones entre ellas el ENARM, examenes de admisión de la UNAM, UAM y el Poli. </small>
                 <small class="esconder url">www.appreto.mx</small>
                 <img src="images/reto.png" alt="app reto" class="img-responsive esconder hidden-xs">
+              </div>
+              <div class="desc">
                 <span class="esconder hidden-xs">Descarga PDF</span>
 
                 <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
@@ -218,17 +246,17 @@
             <div class="col-xs-12 col-sm-2">
               <div class="puntito"></div>
               <h4 class="hidden-xs">2016</h4>
-              <h5 class="hidden-sm hidden-md hidden-lg">diciembre 2016</h5>
               <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes hidden-xs">Diciembre</small>
-              <div class="row">
+              <div class="row opaco">
                 <div class="col-xs-6 col-md-12">
+                  <h5 class="hidden-sm hidden-md hidden-lg">diciembre 2016</h5>
                   <h2 class="drag02">MELLOW</br>
                   CONSULTING</h2>
                   <small>CIUDAD DE MÉXICO</small>
                 </div>
                 <div class="col-xs-6 hidden-md hidden-lg text-right">
-                  <button data-toggle="collapse" data-target="#mellow"><img src="images/down.png" /></button>
+                  <button data-toggle="collapse" data-target="#mellow" class="boton-responsive"><img src="images/Flecha-01.png" /></button>
                 </div>
               </div>
               <div class="desplegable" id="mellow" class="collapse">
@@ -249,6 +277,8 @@
                 <small class="esconder descripcion">Consultoría digital enfocada en estrategia de producto, branding, diseño UX/UI y desarrollo de software.</small>
                 <small class="esconder url">www.appreto.mx</small>
                 <img src="images/mellow.png" alt="app reto" class="img-responsive esconder hidden-xs">
+              </div>
+              <div class="desc">
                 <span class="esconder hidden-xs">Descarga PDF</span>
 
                 <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
@@ -262,17 +292,17 @@
             <div class="col-xs-12 col-sm-2">
               <div class="puntito"></div>
               <h4 class="hidden-xs">2017</h4>
-              <h5 class="hidden-sm hidden-md hidden-lg">Enero 2017</h5>
               <div class="puntoMes hid hidden-xs"></div>
               <small class="esconder mes hidden-xs">Enero</small>
-              <div class="row">
+              <div class="row opaco">
                 <div class="col-xs-6 col-md-12">
+                  <h5 class="hidden-sm hidden-md hidden-lg">Enero 2017</h5>
                   <h2 class="drag02">TALLER</br>
                   FORMA</h2>
                   <small>CIUDAD DE MÉXICO</small>
                 </div>
                 <div class="col-xs-6 text-right hidden-md hidden-lg">
-                  <button data-toggle="collapse" data-target="#forma"><img src="images/down.png" /></button>
+                  <button data-toggle="collapse" data-target="#forma" class="boton-responsive"><img src="images/Flecha-01.png" /></button>
                 </div>
               </div>
               <div class="desplegable" id="forma" class="collapse">
@@ -293,6 +323,8 @@
                 <small class="esconder descripcion">Forma es un taller de corte, ensamble y manufactura de productos de madera, acrílico y algunos otros materiales.  A travéz de tecnología de punta, excelente diseño mexicano y trabajo a mano de alta calidad se logra entregar productos de lujo para producción pequeña o a gran escala.</small>
                 <small class="esconder url">www.appreto.mx</small>
                 <img src="images/forma.png" alt="app reto" class="img-responsive esconder hidden-xs">
+              </div>
+              <div class="desc">
                 <span class="esconder hidden-xs">Descarga PDF</span>
                 <a href="docs/info.pdf" target="_blank" class="text-center hidden-xs esconder">
                   <div class="descarga hidden-xs  esconder">
@@ -307,6 +339,7 @@
     </div>
     <!-- EQUIPO -->
     <div class="section" id="equipo" data-anchor="equipo1">
+      <a name="equipo01"></a>
       <a name="tres"></a>
       <div class="row" onScroll="ocultar()">
         <div class="col-xs-2 text-center">
@@ -317,7 +350,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-offset-1 col-md-2 col-xs-12 text-center">
-                <span>NUESTRO EQUIPO</span>
+                <span>NUESTRO<br class="hidden-md hidden-lg"> EQUIPO</span>
               </div>
               <div class="col-md-2 col-xs-12 text-center">
                 <div class="conte-persona">
@@ -358,6 +391,7 @@
     </div>
     <!-- CONTACTO -->
     <div class="section" id="contacto" data-anchor="contacto1">
+      <a name="contacto01"></a>
       <a name="cuatro"></a>
       <div class="row">
         <div class="col-xs-2 text-center">
@@ -376,7 +410,7 @@
               <div class="col-md-offset-2 col-xs-10 form">
                 <div class="row">
                   <div class="col-xs-12 col-md-6 text-center datos">
-                    +52 (55) 67.30.15.42 / hola@mellowventures.mx
+                    +52 (55) 67.30.15.42 / <u>hola@mellowventures.mx</u>
                   </div>
                   <div class="hidden-xs hidden-ms col-md-6 correo">
                     <div class="row">
@@ -406,11 +440,11 @@
             </div>
             <div class="row hidden-md hidden-lg text-center">
               <div class="col-xs-12">
-                <img src="images/Sellos-02.png" alt="Sello Mellow Ventures" class="img-responsive mellow center-block
-      center-block" />
+                <img src="images/logo.png" alt="Logo Mellow Ventures" class="img-responsive mellow2 center-block" />
               </div>
               <div class="col-xs-12">
-                <img src="images/logo.png" alt="Logo Mellow Ventures" class="img-responsive mellow2 center-block" />
+                <img src="images/Sellos-02.png" alt="Sello Mellow Ventures" class="img-responsive mellow center-block
+      center-block" />
               </div>
             </div>
           </div>
@@ -529,7 +563,12 @@
   </div>
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script>
+    if (screen && screen.width > 768) {
+      document.write('<script type="text/javascript" src="js/jquery.fullPage.min.js"><\/script>');
+    }
+  </script>
+  <!-- <script class="hidden-xs" type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
