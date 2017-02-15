@@ -160,7 +160,7 @@ body {
   #fullpage #portafolio .container-fluid .col-sm-2 .rotate {
     position: absolute;
     transform: rotate(-90deg);
-    margin-top: 23vh; }
+    margin-top: 135%; }
   #fullpage #portafolio .container-fluid .col-sm-2 small {
     float: right;
     font-size: 10px;
@@ -427,6 +427,9 @@ body {
           font-size: 10px;
           font-weight: initial !important;
           margin-bottom: 8px; }
+        body #portafolio .responsive .col-sm-2 .mgt {
+          margin-top: 25px !important;
+          padding-right: 8vw !important; }
         body #portafolio .responsive .col-sm-2 .url {
           margin-bottom: 25px; }
         body #portafolio .responsive .col-sm-2 .imagenR {
@@ -459,7 +462,7 @@ body {
           border-radius: 0px !important;
           display: inline-block;
           padding-top: 10px;
-          margin-top: 29vh; }
+          margin-top: 260% !important; }
         body #portafolio .responsive .col-sm-2:hover .drag {
           margin-top: 5%;
           transition: 0s !important; }
