@@ -166,9 +166,9 @@ body {
     font-size: 10px;
     font-weight: initial;
     margin-bottom: 8px; }
-  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion -webkit-scrollbar-track-piece {
+  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion ::-webkit-scrollbar-track-piece {
     background-color: transparent !important; }
-  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion -webkit-scrollbar-thumb {
+  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion ::-webkit-scrollbar-thumb {
     background-color: transparent !important; }
   #fullpage #portafolio .container-fluid .col-sm-2 .url {
     margin-bottom: 25px; }
@@ -201,7 +201,8 @@ body {
     background-color: rgba(255, 255, 255, 0.3); }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .descripcion {
     overflow-y: scroll !important;
-    height: 20vh !important; }
+    height: 20vh !important;
+    padding-right: 10px; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .desplegable {
     height: 65vh; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .puntito {

@@ -2712,7 +2712,8 @@
                 .off('mouseleave', SECTION_NAV_SEL + ' li')
                 .off('click touchstart', SLIDES_NAV_LINK_SEL)
                 .off('mouseover', options.normalScrollElements)
-                .off('mouseout', options.normalScrollElements);
+                .off('mouseout', options.
+              );
 
             $(SECTION_SEL)
                 .off('click touchstart', SLIDES_ARROW_SEL);
