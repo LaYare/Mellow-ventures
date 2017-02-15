@@ -195,6 +195,9 @@ body {
     margin-top: 0%;
     transition: 1s;
     background-color: rgba(255, 255, 255, 0.3); }
+  #fullpage #portafolio .container-fluid .col-sm-2:hover .descripcion {
+    overflow-y: scroll !important;
+    height: 20vh !important; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .desplegable {
     height: 65vh; }
   #fullpage #portafolio .container-fluid .col-sm-2:hover .puntito {
@@ -432,6 +435,9 @@ body {
           padding-right: 8vw !important; }
         body #portafolio .responsive .col-sm-2 .url {
           margin-bottom: 25px; }
+          body #portafolio .responsive .col-sm-2 .url a {
+            color: #ffffff !important;
+            text-decoration: none !important; }
         body #portafolio .responsive .col-sm-2 .imagenR {
           margin-left: 0px; }
         body #portafolio .responsive .col-sm-2 span {
@@ -453,6 +459,9 @@ body {
           height: auto !important; }
         body #portafolio .responsive .col-sm-2:hover .puntito {
           margin-top: 25px !important; }
+        body #portafolio .responsive .col-sm-2:hover small .url a {
+          color: #ffffff !important;
+          text-decoration: none !important; }
         body #portafolio .responsive .col-sm-2:hover h4 {
           margin-top: 15%; }
         body #portafolio .responsive .col-sm-2:hover a .descarga {
@@ -495,7 +504,7 @@ body {
         letter-spacing: 5px; }
       body #equipo .container-fluid .col-md-2 .conte-persona {
         height: 49vh !important;
-        margin-top: -5vh !important;
+        margin-top: -1vh !important;
         margin-left: 0px !important;
         padding-left: 20vw !important;
         padding-right: 20vw !important; }
@@ -548,7 +557,7 @@ body {
       margin-top: 2em;
       width: 5em;
       height: 5em;
-      margin-bottom: 20vh; }
+      margin-bottom: 6vh; }
     body #contacto .mellow2 {
       width: 10em;
       height: 3em;

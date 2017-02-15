@@ -31,7 +31,7 @@ $(document).ready(function() {
         offsetSections: false,
         resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
+        normalScrollElements: '.descripcion',
         scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,

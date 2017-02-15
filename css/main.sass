@@ -249,6 +249,10 @@ body
           transition: 1s
           background-color: rgba(255, 255, 255, 0.3)
 
+        &:hover .descripcion
+          overflow-y: scroll !important
+          height: 20vh !important
+
         &:hover .desplegable
           height: 65vh
 
@@ -549,6 +553,10 @@ body
           .url
             margin-bottom: 25px
 
+            a
+              color: $blanco !important
+              text-decoration: none !important
+
           .imagenR
             margin-left: 0px
 
@@ -575,6 +583,10 @@ body
 
           &:hover .puntito
             margin-top: 25px !important
+
+          &:hover small .url a
+            color: $blanco !important
+            text-decoration: none !important
 
           &:hover h4
             margin-top: 15%
@@ -628,7 +640,7 @@ body
 
           .conte-persona
             height: 49vh !important
-            margin-top: (-5vh) !important
+            margin-top: (-1vh) !important
             margin-left: 0px !important
             padding-left: 20vw !important
             padding-right: 20vw !important
@@ -692,7 +704,7 @@ body
         margin-top: 2em
         width: 5em
         height: 5em
-        margin-bottom: 20vh
+        margin-bottom: 6vh
 
       .mellow2
         width: 10em
