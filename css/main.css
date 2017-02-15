@@ -166,6 +166,10 @@ body {
     font-size: 10px;
     font-weight: initial;
     margin-bottom: 8px; }
+  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion -webkit-scrollbar-track-piece {
+    background-color: transparent !important; }
+  #fullpage #portafolio .container-fluid .col-sm-2 .descripcion -webkit-scrollbar-thumb {
+    background-color: transparent !important; }
   #fullpage #portafolio .container-fluid .col-sm-2 .url {
     margin-bottom: 25px; }
   #fullpage #portafolio .container-fluid .col-sm-2 span {
