@@ -1,27 +1,19 @@
 angular.module("Contacto",[])
-  .controller("Firstcontroller",function ($scope,$http) {
-    $scope.post = [];
-    $scope.newPost = {};
+  .controller("Firstcontroller",function ($scope,$http,$window) {
+
     $scope.user = {};
 
     $scope.addPost = function () {
-       console.log($scope.user);
        $scope.user.page = "mellowventures.mx";
-       $scope.message = "sin mensaje";
-       console.log($scope.user);
+       $scope.user.message = "Sin Mensaje";
+       $http.post("http://emailapi.mellow.online/api/general",$scope.user)
+           .success(function (data, status, headers, config) {
+               $window.location.reload();
+           })
+           .error(function (data, status, header, config) {
+                console.log(data);
+           });
 
-      $http.post(,{
-        title: $scope.newPost.title,
-        body: $scope.newPost.body,
-        userId: 1
-      })
-        .success(function(data,status,headers,config) {
-          $scope.post.push($scope.newPost);
-          $scope.addPost = {}
-        })
-        .error(function (data,status,headers,config) {
-          console.log(error);
-        });
-    }
+    };
 
   });
