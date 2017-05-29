@@ -12,6 +12,7 @@ angular.module("Contacto",[])
            })
            .error(function (data, status, header, config) {
                 console.log(data);
+                console.log(status);
            });
 
     };
