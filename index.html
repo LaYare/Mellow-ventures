@@ -418,18 +418,18 @@
                   <div class="col-xs-12 col-md-6 text-center datos">
                     +52 (55) 67.30.15.42 / <u>hola@mellowventures.mx</u>
                   </div>
-                  <div class="hidden-xs hidden-ms col-md-6 correo">
+                  <div class="hidden-xs hidden-ms col-md-6 correo" style="padding-bottom: 2px;">
                     <div class="row">
                       <div class="col-xs-1">
                         <img src="images/mail.png">
                       </div>
-                      <div class="col-xs-8">
-                        <form>
-                          <input ng-model="user.email"  type="email" placeholder="Déjanos tu correo ..." class="text">
+                      <div class="col-xs-11">
+                        <form id="form1">
+                          <input style="width: 90%;" id="email-mellow" ng-model="user.email"  type="email" placeholder="Déjanos tu correo ..." class="text" required>
+                          <label for="email-mellow" form="form1">
+                            <button ng-click="addPost()" name="button" class="send"><img src="images/arrow.png" alt=""/></button>
+                          </label>
                         </form>
-                      </div>
-                      <div class="col-xs-1 col-md-offset-1">
-                        <button ng-click="addPost()" name="button" class="send"><img src="images/arrow.png" alt=""/></button>
                       </div>
                     </div>
                   </div>
